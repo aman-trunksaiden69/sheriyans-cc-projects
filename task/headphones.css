@@ -1,0 +1,327 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+#page1{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    align-items: center;
+    overflow: hidden;
+    
+}
+
+#page1 #menu h1{
+    position: absolute;
+    top: 3%;
+    left: 10%;
+    font-size: 28px;
+    text-transform: uppercase;
+    font-family: gilroy;
+    font-weight: 900;
+    color: black;
+    letter-spacing: 2px;
+}
+
+#page1 #menu i{
+    position: absolute;
+    top: 3%;
+    left: 4%;
+    font-size: 28px;
+    font-weight: 600;
+    color: black;
+}
+
+#page1 .menu2 a{
+    position: absolute;
+    top: 3%;
+    left: 70%;
+    display: flex;
+    gap: 90px;
+}
+
+.menu2 a{
+    text-decoration: none;
+    color: black;
+}
+
+.menu2 a{
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.text a:after{
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: black;
+    left: 50%;
+    bottom: 0%;
+    transform: translate(-50%,0%);
+    transition: ease .5s;
+}
+
+.text a:hover::after{
+    width: 100%;
+}
+
+#page1 .menu2 i{
+    position: absolute;
+    top: 3%;
+    left: 95%;
+    font-size: 20px;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.826);
+}
+
+#page1 #left{
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    font-size: 25px;
+    font-weight: 700;
+    color: black;
+}
+
+#page1 #right{
+    position: absolute;
+    top: 30%;
+    left: 5%;
+    font-size: 25px;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.809);
+}
+
+#page1 #no1{
+    position: absolute;
+    top: 20%;
+    left: 95%;
+    color: black;
+    font-size: 25px;
+    font-weight: 700;
+    font-family: monospace;
+    z-index: 999;
+}
+
+#page1 p{
+    position: absolute;
+    top: 27%;
+    left: 94.9%;
+    color: black;
+    font-size: 5px;
+    font-weight: 500;
+    font-family: gilroy;
+    text-transform: uppercase;
+    z-index: 999;
+}
+
+#page1 #no2{
+    position: absolute;
+    top: 30%;
+    left: 95%;
+    color: black;
+    font-size: 25px;
+    font-weight: 700;
+    font-family: monospace;
+    z-index: 999;
+}
+
+#page1 #mix1{
+    position: absolute;
+    top: 56%;
+    left: 95%;
+    font-size: 20px;
+    font-weight: 700;
+    color: black;
+    z-index: 999;
+}
+
+#page1 #mix2{
+    position: absolute;
+    top: 63%;
+    left: 95%;
+    font-size: 20px;
+    font-weight: 700;
+    color: black;
+    z-index: 999;
+}
+
+#page1 #mix3{
+    position: absolute;
+    top: 70%;
+    left: 95%;
+    font-size: 20px;
+    font-weight: 700;
+    color: black;
+    z-index: 999;
+}
+
+#page1 #mix4{
+    position: absolute;
+    top: 77%;
+    left: 95%;
+    font-size: 20px;
+    font-weight: 700;
+    color: black;
+    z-index: 999;
+}
+
+#lava{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+#lava #aman{
+    height: 60%;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    transform: translate(-50%,-50%);
+    background-color: rgba(165, 42, 42, 0.776);
+}
+
+#lava #aman #down{
+    position: absolute;
+    top: 6%;
+    left: 50%;
+    color: black;
+    font-size: 35px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+}
+
+#lava #aman #town{
+    position: absolute;
+    top: 17%;
+    left: 50%;
+    color: rgba(139, 0, 0, 0.702);
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+}
+
+#lava #aman p{
+    position: absolute;
+    top: 29%;
+    left: 50%;
+    color: black;
+    font-size: 11px;
+    font-weight: 800;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+}
+
+#aman #rect {
+    height: 15%;
+    width: 20%;
+    background-color: brown;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    position: absolute;
+    top: 85%;
+    left: 80%;
+    
+}
+
+ #rect h2{
+    font-size: 17px;
+    font-family: gilroy;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: white;
+}
+
+#rect i{
+    font-size: 17px;
+    font-weight: 600;
+    color: white;
+}
+
+#lava #honey{
+    height: 60%;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    transform: translate(-50%,-50%);
+    background-color: gray;
+}    
+
+#lava #honey #do{
+    position: absolute;
+    top: 6%;
+    left: 50%;
+    color: black;
+    font-size: 35px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+}
+
+#lava #honey #to{
+    position: absolute;
+    top: 17%;
+    left: 50%;
+    color: rgba(139, 0, 0, 0.702);
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+}
+
+#lava #honey p{
+    position: absolute;
+    top: 29%;
+    left: 50%;
+    color: black;
+    font-size: 11px;
+    font-weight: 800;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+}
+
+#honey #rex {
+    height: 15%;
+    width: 20%;
+    background-color: brown;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    position: absolute;
+    top: 85%;
+    left: 80%;
+    
+}
+
+ #rex h2{
+    font-size: 17px;
+    font-family: gilroy;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: white;
+}
+
+#rex i{
+    font-size: 17px;
+    font-weight: 600;
+    color: white;
+}        
+

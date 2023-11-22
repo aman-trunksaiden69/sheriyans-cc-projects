@@ -1,0 +1,443 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+#landing1{
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+#landing1 video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#landing1 #four {
+    position: absolute;
+    top: 6%;
+    left: 50%;
+    display: flex;
+    justify-content: center;
+    z-index: 999;
+    font-size: 18px;
+    gap: 25px;
+    text-transform: capitalize;
+    font-family: gilroy;
+}
+
+ #four #delt1{
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    transition: all ease 0.3s;
+}
+
+#four #delt1:hover{
+    scale: 1.2;
+    color: rgb(177, 21, 47);
+    text-decoration: underline;
+}
+
+#four #delt2{
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    transition: all ease 0.3s;
+}
+
+#four #delt2:hover{
+    scale: 1.2;
+    color: rgb(177, 21, 47);
+    text-decoration: underline;
+}
+
+#four #delt3{
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    transition: all ease 0.3s;
+}
+
+#four #delt3:hover{
+    scale: 1.2;
+    color: rgb(177, 21, 47);
+    text-decoration: underline;
+}
+
+#four #delt4{
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    transition: all ease 0.3s;
+}
+
+#four #delt4:hover{
+    scale: 1.2;
+    color: rgb(177, 21, 47);
+    text-decoration: underline;
+}
+
+#four #delt5{
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    transition: all ease 0.3s;
+}
+
+#four #delt5:hover{
+    scale: 1.2;
+    color: rgb(177, 21, 47);
+    text-decoration: underline;
+}
+
+#landing1 input{
+    position: absolute;
+    top: 5.5%;
+    left: 80%;
+    background-color: silver;
+    padding: 2px 20px;
+    font-size: 18px;
+    border: none;
+    border-bottom: 3px solid rgb(177, 21, 47);
+    border-radius: 40px;
+    z-index: 999;
+    transition: all ease 0.3s;
+}
+
+#landing1 #meow{
+    font-size: 20px;
+    color: white;
+    font-weight: 600;
+    z-index: 9999;
+    position: absolute;
+    top: 5.8%;
+    left: 80.5%;
+}
+
+#landing1 input:hover{
+  background-color: rgb(177, 21, 47);
+}
+
+::placeholder { 
+    color: white;
+    font-family: gilroy;
+    font-weight: 500;
+    text-align: center;
+    opacity: 90%;
+  }
+
+#landing1 #new{
+    position: absolute;
+    top: 6%;
+    left: 5%;
+    color: silver;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-family: monument;
+    z-index: 999;
+    transition: all ease 0.4s;
+
+}
+
+#landing1 #new:hover{
+    scale: 1.2;
+    color: white;   
+}   
+
+#landing1 #white{
+    position: absolute;
+    top: 6%;
+    left: 2%;
+    color: rgb(177, 21, 47);
+    font-size: 22px;
+    font-weight: 600;
+    z-index: 999;
+}
+
+#landing1 #log1{
+    position: absolute;
+    top: 35%;
+    left: 2%;
+    color: silver;
+    font-size: 20px;
+    font-weight: 500;
+    z-index: 9999;
+    border: 3px solid rgb(177, 21, 47);
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    text-align: center;
+    padding: 5px;
+    transition: all ease 0.3s;
+}
+
+#landing1 #log1:hover{
+  scale: 1.1;
+  color: blanchedalmond;
+}
+
+#landing1 #log2{
+    position: absolute;
+    top: 45%;
+    left: 2%;
+    color: silver;
+    font-size: 20px;
+    font-weight: 500;
+    z-index: 9999;
+    border: 3px solid rgb(177, 21, 47);
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    text-align: center;
+    padding: 5px;
+    transition: all ease 0.3s;
+}
+
+#landing1 #log2:hover{
+    scale: 1.1;
+    color: blanchedalmond;
+  }
+
+#landing1 #log3{
+    position: absolute;
+    top: 55%;
+    left: 2%;
+    color: silver;
+    font-size: 20px;
+    font-weight: 500;
+    z-index: 9999;
+    border: 3px solid rgb(177, 21, 47);
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    text-align: center;
+    padding: 5px;
+    transition: all ease 0.3s;
+}
+
+#landing1 #log3:hover{
+    scale: 1.1;
+    color: blanchedalmond;
+  }
+
+#landing1 #log4{
+    position: absolute;
+    top: 65%;
+    left: 2%;
+    color: silver;
+    font-size: 20px;
+    font-weight: 500;
+    z-index: 9999;
+    border: 3px solid rgb(177, 21, 47);
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    text-align: center;
+    padding: 5px;
+    transition: all ease 0.3s;
+}
+
+#landing1 #log4:hover{
+    scale: 1.1;
+    color: blanchedalmond;
+  }
+
+#landing1 #inter{
+    position: absolute;
+    top: 35%;
+    left: 10%;
+    z-index: 999;
+    color: rgba(255, 255, 255, 0.768);
+    font-size: 80px;
+    font-family: gilroy;
+    align-items: center;
+    text-transform: uppercase;
+    filter: drop-shadow(5px 5px 5px rgb(177, 21, 47));
+    animation-name: slideinleft;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-delay: 1s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: both;
+
+    transform: translatex(-100px);
+}
+
+@keyframes slideinleft {
+    from{
+        transform: translatex(-300px);
+    }
+    to{
+        transform: translatex(0);
+    }
+}
+
+
+#landing1 #outer{
+    position: absolute;
+    top: 45%;
+    left: 20%;
+    z-index: 999;
+    color: rgba(255, 255, 255, 0.768);
+    font-size: 110px;
+    font-family: gilroy;
+    align-items: center;
+    text-transform: uppercase;
+    animation-name: slideinright;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-delay: 1s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: both;
+    transition: all ease 0.3s;
+   
+    transform: translatex(-100px);
+}
+
+#landing1 #outer:hover{
+    color: rgb(177, 21, 47);
+    animation-play-state: paused;
+    scale: 1.2;
+}
+
+@keyframes slideinright {
+    from{
+        transform: translatex(400px);
+    }
+    to{
+        transform: translatex(0);
+    }
+
+}
+
+#landing1 #box-1 h3{
+    z-index: 999;
+    position: absolute;
+    top: 70%;
+    left: 38%;
+    color: white;
+    font-size: 25px;
+    font-weight: 500;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-transform: capitalize;
+
+}
+
+#landing1 #het{
+
+    position: absolute;
+    top: 50%;
+    left: 6%;
+    z-index: 999;
+    height: 40%;
+    width: 20%;
+    object-fit: cover;
+    filter: drop-shadow(10px 10px 10px rgb(177, 21, 47));
+    animation-name: rotate;
+    animation-timing-function: 1;
+    animation-duration: 3s;
+    animation-delay: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+}
+
+@keyframes rotate {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+#landing1 button{
+    position: absolute;
+    top: 80%;
+    left: 45%;
+    z-index: 999;
+    background-color: pink;
+    border: none;
+    border-top: 3px solid rgb(177, 21, 47);
+    border-bottom: 3px solid rgb(177, 21, 47);
+    border-left: 3px solid rgb(177, 21, 47);
+    border-right: 3px solid rgb(177, 21, 47);
+    color: rgb(177, 21, 47);
+    height: 6%;
+    width:9%;
+    font-size: 18px;
+    font-weight: 800;
+    font-family: gilroy;
+    transition: all ease 0.3s;
+}
+
+#landing1 button:hover{
+    transform: translateY(10px);
+    background-color: rgb(177, 21, 47);
+    color: white;
+}
+
+#landing1 #down-l{
+    position: absolute;
+    top: 87%;
+    left: 48%;
+    color: rgb(177, 21, 47);
+    font-size: 45px;
+    font-weight: 800;
+    z-index: 999;
+}
+
+#landing1 #greta{
+    position: absolute;
+    top: 15%;
+    left: 75%;
+    z-index:999;
+    height: 40%;
+    width: 10%;
+    border-radius: 90px;
+    object-position: center;
+    object-fit: cover;
+    background-size: cover;
+    filter: drop-shadow(10px 10px 10px rgb(177, 21, 47));
+}
+
+#landing1 #force{
+    position: absolute;
+    top: 15%;
+    left: 87%;
+    z-index:999;
+    height: 40%;
+    width: 10%;
+    border-radius: 90px;
+    object-position: center;
+    object-fit: cover;
+    background-size: cover;
+    filter: drop-shadow(10px 10px 10px rgb(177, 21, 47));
+}
+
+#landing1 #like{
+    position: absolute;
+    top: 60%;
+    left: 78%;
+    z-index: 999;
+    color: white;
+    color-interpolation-filters: linearRGB;
+    font-size: 18px;
+    font-family: gilroy;
+    font-weight: 600;
+    text-transform: uppercase;
+}

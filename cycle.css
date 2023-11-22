@@ -1,0 +1,987 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+#main1 {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+#main1 #forest{
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+#main1 #logo{
+    position: absolute;
+    top: -1%;
+    left: -2%;
+    z-index: 99;
+    height: 15%;
+    width: 15%;
+    animation-name: dear;
+    animation-timing-function: ease-in;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+    animation-direction: normal;
+}
+
+@keyframes dear {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+#main1 #oneline{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 90px;
+    position: absolute;
+    top: 5%;
+    left: 33%;
+    background-color: rgba(0, 0, 0, 0.64);
+    height: 5%;
+    width: 35%;
+    position: fixed;
+    border-radius: 20px;
+    z-index: 999;
+}
+
+#main1 #oneline #max1{
+    color: white;
+    font-size: 18px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 500;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all ease 0.3s;
+    text-align: center;
+}
+
+#main1 #oneline #max1:hover{
+    scale: 1.1;
+    color: maroon;
+    background-color: black;
+    border-radius: 20px;
+    height: 28px;
+    width: 90px;
+    padding-top: 3px;
+    font-weight: 700;
+}
+
+#main1 #oneline #max2{
+    color: white;
+    font-size: 18px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 500;
+    text-decoration: none;
+    text-transform: capitalize;
+    text-align: center;
+    transition: all ease 0.3s;
+
+}
+
+#main1 #oneline #max2:hover{
+    scale: 1.1;
+    color: maroon;
+    font-weight: 700;
+    background-color: black;
+    border-radius: 20px;
+    height: 28px;
+    width: 150px;
+    padding-top: 3px;
+    font-weight: 700;
+}
+
+
+#main1 #oneline #max3{
+    color: white;
+    font-size: 18px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 500;
+    text-decoration: none;
+    text-transform: capitalize;
+    text-align: center;
+    transition: all ease 0.3s;
+}
+
+#main1 #oneline #max3:hover{
+    scale: 1.1;
+    color: maroon;
+    font-weight: 700;
+    background-color: black;
+    border-radius: 20px;
+    height: 28px;
+    width: 90px;
+    padding-top: 3px;
+    font-weight: 700;
+}
+
+#main1 #rows{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    position: absolute;
+    top: 5%;
+    left: 87%;
+    color: white;
+    font-family: gilroy;
+    border-bottom: 2px solid white;
+    border-top: 2px solid white;
+    border-right: 2px solid white;
+    border-left: 2px solid white;
+    height: 30px;
+    width: 160px;
+}
+
+#main1 #rows #den{
+    font-size: 15px;
+    font-weight: 500;
+    border-right: 2px solid white;
+}
+
+#main1 #rows #tan{
+    font-size: 15px;
+    font-weight: 500;
+    border-left: 2px solid white;
+}
+
+#main1 #loofy {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    position: absolute;
+    top: 12%;
+    left: 87.9%;
+    font-size: 15px;
+    color: white;
+}
+
+
+#loofy #now1{
+    border-radius: 10px;
+    border: 2px solid white;
+    height: 28px;
+    width: 28px;
+    padding-top: 3px;
+    text-align: center;
+    transition: all ease 0.3s;
+}
+
+#loofy #now1:hover{
+    scale: 1.1;
+    color: royalblue;
+}
+
+#loofy #now2{
+    border-radius: 10px;
+    border: 2px solid white;
+    height: 28px;
+    width: 28px;
+    padding-top: 3px;
+    text-align: center;
+    transition: all ease 0.3s;
+}
+
+#loofy #now2:hover{
+    scale: 1.1;
+    color: red;
+}
+
+
+#loofy #now3{
+    border-radius: 10px;
+    border: 2px solid white;
+    height: 28px;
+    width: 28px;
+    padding-top: 3px;
+    text-align: center;
+    transition: all ease 0.3s;
+}
+
+#loofy #now3:hover{
+    scale: 1.1;
+    color: darkblue;
+}
+
+
+#loofy #now4{
+    border-radius: 10px;
+    border: 2px solid white;
+    height: 28px;
+    width: 28px;
+    padding-top: 3px;
+    text-align: center;
+    transition: all ease 0.3s;
+}
+
+#loofy #now4:hover{
+    scale: 1.1;
+    color: orange;
+}
+
+#main1 #nil{
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    font-size: 30px;
+    font-family: gilroy;
+    text-transform: capitalize;
+    color: white;
+    font-weight: 700;
+    letter-spacing: 10px;
+    line-height: 10px;
+}
+
+#main1 #letter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    position: absolute;
+    top: 55%;
+    left:18%;
+    color: white;
+    font-size: 50px;
+     animation-name: goten;
+     animation-timing-function: ease-in;
+     animation-iteration-count: 1;
+     animation-fill-mode: both;
+     animation-duration: 3s;
+     animation-direction: normal;
+
+     transform: translatex(-100px);
+} 
+
+
+@keyframes goten {
+    from{
+        transform: translateX(-300px);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+
+#letter #obj1{
+    font-family: gilroy;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+#letter #obj2{
+    font-family:monument;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: maroon;
+    transition: all ease 0.3s;
+}
+
+#letter #obj2:hover{
+    scale: 1.1;
+
+}
+
+#main1 h2{
+    position: absolute;
+    top: 10%;
+    left: 3.7%;
+    font-size: 16px;
+    font-family: gilroy;
+    font-weight: 800;
+    text-transform: capitalize;
+    color: maroon;
+}
+
+#main1 button{
+    position: absolute;
+    top: 85%;
+    left: 45%;
+    height: 5%;
+    width: 12%;
+    background-color: transparent;
+    color: white;
+    font-size: 15px;
+    font-family: gilroy;
+    font-weight: 500;
+    border: none;
+    border-top: 2px solid maroon;
+    border-left: 2px solid maroon;
+    border-right: 2px solid maroon;
+    transition: all ease 0.3s;
+}
+
+#main1 button:hover{
+    transform: translateY(10px);
+    scale: 1.1;
+}
+
+#main1 #down{
+    position: absolute;
+    top: 91%;
+    left: 50%;
+    font-size: 30px;
+    font-weight: 600;
+    color: maroon;
+}
+
+#main2{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    
+}
+
+#main2 #blur{
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    filter: blur(200px);
+}
+
+#main2 #three{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#three #tele1{
+    height: 40%;
+    width: 22%;
+    object-fit: cover;
+    position: absolute;
+    top: 10%;
+    left: 17%;
+    border-radius: 20px;
+    filter: drop-shadow(8px 8px 8px maroon);
+    transition: all ease 0.3s;
+}
+
+#three #tele1:hover{
+    scale: 1.1;
+}
+
+#three #tele2{
+    height: 40%;
+    width: 22%;
+    object-fit: cover;
+    position: absolute;
+    top: 10%;
+    left: 41%;
+    border-radius: 20px;
+    filter: drop-shadow(8px 8px 8px maroon);
+    transition: all ease 0.3s;
+}
+
+#three #tele2:hover{
+    scale: 1.1;
+}
+
+#three #tele3{
+    height: 40%;
+    width: 22%;
+    object-fit: cover;
+    position: absolute;
+    top: 10%;
+    left: 65%;
+    border-radius: 20px;
+    filter: drop-shadow(8px 8px 8px maroon);
+    transition: all ease 0.3s;
+}
+
+#three #tele3:hover{
+    scale: 1.1;
+}
+
+#main2 #two{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#two #rol1{
+    height: 40%;
+    width: 22%;
+    object-fit: cover;
+    position: absolute;
+    top: 53%;
+    left: 29%;
+    border-radius: 20px;
+    filter: drop-shadow(8px 8px 8px maroon);
+    transition: all ease 0.3s;
+}
+
+#two #rol1:hover{
+    scale: 1.1;
+}
+
+#two #rol2{
+    height: 40%;
+    width: 22%;
+    object-fit: cover;
+    position: absolute;
+    top: 53%;
+    left: 53%;
+    border-radius: 20px;
+    filter: drop-shadow(8px 8px 8px maroon);
+    transition: all ease 0.3s;
+}
+
+#two #rol2:hover{
+    scale: 1.1;
+}
+
+#main2 #dil{
+    height: 10%;
+    width: 5%;
+    background-color: white;
+    position: absolute;
+    top: 46.5%;
+    left: 49.5%;
+    border-radius: 50px;
+}
+
+#main2 #dil #leo{
+    height: 70px;
+    width: 70px;
+    align-items: center;
+    object-fit: cover;
+    background-position: center;
+    animation-name: mono;
+    animation-timing-function: linear;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes mono {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+#three #elbus{
+    position: absolute;
+    top: 34%;
+    left: 22%;
+    font-size: 25px;
+    color: black;
+    font-family: gilroy;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+#three #btn1{
+    position: absolute;
+    top: 41%;
+    left: 25%;
+    font-size: 13px;
+    color: maroon;
+    background-color: white;
+    border: none;
+    border-bottom: 2px solid maroon;
+    border-top: 2px solid maroon;
+    border-left: 2px solid maroon;
+    border-right: 2px solid maroon;
+    height: 4%;
+    width: 6%;
+    font-family: gilroy;
+    font-weight: 600;
+    transition: all ease 0.3s;
+}
+
+#three #btn1:hover{
+    background-color: maroon;
+    color: white;
+}
+
+#three #wolferic{
+    position: absolute;
+    top: 34%;
+    left: 48%;
+    font-size: 25px;
+    color: black;
+    font-family: gilroy;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+#three #btn2{
+    position: absolute;
+    top: 41%;
+    left: 49%;
+    font-size: 13px;
+    color: maroon;
+    background-color: white;
+    border: none;
+    border-bottom: 2px solid maroon;
+    border-top: 2px solid maroon;
+    border-left: 2px solid maroon;
+    border-right: 2px solid maroon;
+    height: 4%;
+    width: 6%;
+    font-family: gilroy;
+    font-weight: 600;
+    transition: all ease 0.3s;
+}
+
+#three #btn2:hover{
+    background-color: maroon;
+    color: white;
+}
+
+
+#three #percival{
+    position: absolute;
+    top: 34%;
+    left: 72%;
+    font-size: 25px;
+    color: black;
+    font-family: gilroy;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+#three #btn3{
+    position: absolute;
+    top: 41%;
+    left: 73.5%;
+    font-size: 13px;
+    color: maroon;
+    background-color: white;
+    border: none;
+    border-bottom: 2px solid maroon;
+    border-top: 2px solid maroon;
+    border-left: 2px solid maroon;
+    border-right: 2px solid maroon;
+    height: 4%;
+    width: 6%;
+    font-family: gilroy;
+    font-weight: 600;
+    transition: all ease 0.3s;
+}
+
+#three #btn3:hover{
+    background-color: maroon;
+    color: white;
+}
+
+
+#two #mat{
+    position: absolute;
+    top: 77%;
+    left: 32%;
+    font-size: 25px;
+    color: black;
+    font-family: gilroy;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+#two #btn4{
+    position: absolute;
+    top: 85%;
+    left: 37%;
+    font-size: 13px;
+    color: maroon;
+    background-color: white;
+    border: none;
+    border-bottom: 2px solid maroon;
+    border-top: 2px solid maroon;
+    border-left: 2px solid maroon;
+    border-right: 2px solid maroon;
+    height: 4%;
+    width: 6%;
+    font-family: gilroy;
+    font-weight: 600;
+    transition: all ease 0.3s;
+}
+
+#two #btn4:hover{
+    background-color: maroon;
+    color: white;
+}
+
+
+#two #hol{
+    position: absolute;
+    top: 77%;
+    left: 57%;
+    font-size: 25px;
+    color: black;
+    font-family: gilroy;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+#two #btn5{
+    position: absolute;
+    top: 85%;
+    left: 61%;
+    font-size: 13px;
+    color: maroon;
+    background-color: white;
+    border: none;
+    border-bottom: 2px solid maroon;
+    border-top: 2px solid maroon;
+    border-left: 2px solid maroon;
+    border-right: 2px solid maroon;
+    height: 4%;
+    width: 6%;
+    font-family: gilroy;
+    font-weight: 600;
+    transition: all ease 0.3s;
+}
+
+#two #btn5:hover{
+    background-color: maroon;
+    color: white;
+}
+
+
+#main3 {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+#main3 #hills{
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+
+#main3 #nav1{
+    position: absolute;
+    top: 33%;
+    left: 20%;
+    height: 20%;
+    width: 60%;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+}
+
+#nav1 p{
+    padding-top: 40px;
+    padding-left: 80px;
+    font-size: 18px;
+    font-family: gilroy;
+    font-weight: 700;
+    color: white;
+    text-transform: capitalize;
+}
+
+#main3 #salut{
+    position: absolute;
+    top: 55%;
+    left: 14%;
+    height: 30%;
+    width: 20%;
+    border-left: 2px solid white;
+    border-right: 2px solid white;
+
+}
+
+#salut #term{
+    color: maroon;
+    font-size: 20px;
+    font-family: gilroy;
+    font-weight: 600;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+#salut #how{
+    position: absolute;
+    top: 20%;
+    left: 36%;
+    font-size: 16px;
+    font-family: gilroy;
+    font-weight: 500;
+    text-decoration: none;
+    color: white;
+    transition: all ease 0.3s;
+}
+
+#salut #how:hover{
+    text-decoration: underline;
+    scale: 1.1;
+}
+
+#salut #are{
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    font-size: 16px;
+    font-family: gilroy;
+    font-weight: 500;
+    text-decoration: none;
+    color: white;
+    transition: all ease 0.3s;
+}
+
+#salut #are:hover{
+    text-decoration: underline;
+    scale: 1.1;
+}
+
+#salut #you{
+    position: absolute;
+    top: 60%;
+    left: 27%;
+    font-size: 16px;
+    font-family: gilroy;
+    font-weight: 500;
+    text-decoration: none;
+    color: white;
+    transition: all ease 0.3s;
+}
+
+#salut #you:hover{
+    text-decoration: underline;
+    scale: 1.1;
+}
+
+#main3 #ciao{
+    position: absolute;
+    top: 55%;
+    left: 34%;
+    height: 30%;
+    width: 20%;
+    border-left: 2px solid white;
+    border-right: 2px solid white;
+
+}
+
+#ciao #deep{
+    color: maroon;
+    font-size: 20px;
+    font-family: gilroy;
+    font-weight: 600;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+#ciao #im{
+    position: absolute;
+    top: 20%;
+    left: 33%;
+    font-size: 16px;
+    font-family: gilroy;
+    font-weight: 500;
+    text-decoration: none;
+    color: white;
+    transition: all ease 0.3s;
+}
+
+#ciao #im:hover{
+    text-decoration: underline;
+    scale: 1.1;
+}
+
+#ciao #fine{
+    position: absolute;
+    top: 40%;
+    left: 34.5%;
+    font-size: 16px;
+    font-family: gilroy;
+    font-weight: 500;
+    text-decoration: none;
+    color: white;
+    transition: all ease 0.3s;
+}
+
+#ciao #fine:hover{
+    text-decoration: underline;
+    scale: 1.1;
+}
+
+#ciao #and{
+    position: absolute;
+    top: 60%;
+    left: 30%;
+    font-size: 16px;
+    font-family: gilroy;
+    font-weight: 500;
+    text-decoration: none;
+    color: white;
+    transition:  all ease 0.3s;
+}
+
+#ciao #and:hover{
+    text-decoration: underline;
+    scale: 1.1;
+}
+
+#main3 #hate{
+    position: absolute;
+    top: 55%;
+    left: 54%;
+    height: 30%;
+    width: 20%;
+    border-left: 2px solid white;
+    border-right: 2px solid white;
+
+}
+
+#hate #letgo{
+    color: maroon;
+    font-size: 20px;
+    font-family: gilroy;
+    font-weight: 600;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+#hate #what{
+    position: absolute;
+    top: 20%;
+    left: 41%;
+    font-size: 16px;
+    font-family: gilroy;
+    font-weight: 500;
+    text-decoration: none;
+    color: white;
+    transition: all ease 0.3s;
+}
+
+#hate #what:hover{
+    text-decoration: underline;
+    scale: 1.1;
+}
+
+#hate #we{
+    position: absolute;
+    top: 40%;
+    left: 39%;
+    font-size: 16px;
+    font-family: gilroy;
+    font-weight: 500;
+    text-decoration: none;
+    color: white;
+    transition: all ease 0.3s;
+}
+
+#hate #we:hover{
+    text-decoration: underline;
+    scale: 1.1;
+}
+
+#hate #see{
+    position: absolute;
+    top: 60%;
+    left: 34%;
+    font-size: 16px;
+    font-family: gilroy;
+    font-weight: 500;
+    text-decoration: none;
+    color: white;
+    transition: all ease 0.3s;
+}
+
+#hate #see:hover{
+    text-decoration: underline;
+    scale: 1.1;
+}
+
+#main3 #live{
+    position: absolute;
+    top: 55%;
+    left: 74%;
+    height: 30%;
+    width: 20%;
+    border-left: 2px solid white;
+    border-right: 2px solid white;
+
+}
+
+#live #realise{
+    color: maroon;
+    font-size: 20px;
+    font-family: gilroy;
+    font-weight: 600;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+#live #bat{
+    position: absolute;
+    top: 20%;
+    left: 40%;
+    font-size: 16px;
+    font-family: gilroy;
+    font-weight: 500;
+    text-decoration: none;
+    color: white;
+    transition: all ease 0.3s;
+}
+
+#live #bat:hover{
+    text-decoration: underline;
+    scale: 1.1;
+}
+
+#live #cat{
+    position: absolute;
+    top: 40%;
+    left: 41%;
+    font-size: 16px;
+    font-family: gilroy;
+    font-weight: 500;
+    text-decoration: none;
+    color: white;
+    transition: all ease 0.3s;
+}
+
+#live #cat:hover{
+    text-decoration: underline;
+    scale: 1.1;
+}
+
+#live #pin{
+    position: absolute;
+    top: 60%;
+    left: 31%;
+    font-size: 16px;
+    font-family: gilroy;
+    font-weight: 500;
+    text-decoration: none;
+    color: white;
+    transition: all ease 0.3s;
+}
+
+#live #pin:hover{
+    text-decoration: underline;
+    scale: 1.1;
+}
+
+#main3 #dark{
+    position: absolute;
+    top: 0%;
+    left: 39%;
+    height: 40%;
+    width: 30%;
+}

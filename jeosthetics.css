@@ -1,0 +1,787 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'montserrat';
+    color: #fff;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    
+}
+
+*::selection{
+    background-color: #fff;
+    color: #95c11e;
+}
+
+body::-webkit-scrollbar{
+    display: block;
+    width: 7px;
+    background-color: #95c11e;
+}
+
+body::-webkit-scrollbar-thumb{
+    background-color: #fff;
+    border-radius: 50px;
+}
+
+#cursor{
+    height: 20px;
+    width: 20px;
+    background-color: #96c11e;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 999;
+}
+
+#cursor-blur{
+    height: 400px;
+    width: 400px;
+    background-color: #96c11e51;
+    border-radius: 50%;
+    position: fixed;
+    filter: blur(40px);
+    z-index: 1;
+}
+
+
+#nav{
+    height: 145px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 70px;
+    position: fixed;
+    gap: 40px;
+    z-index: 888;
+}
+
+#nav img{
+    height: 70px;
+   
+}
+
+#nav h4{
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 12px;
+}
+
+video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: fixed;
+    z-index: -1;
+}
+
+#main{
+   position: relative;
+   background-color: rgba(0, 0, 0, 0.604);
+}
+
+#page1{
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  z-index: 10;
+}
+
+#page1 h1{
+    font-size: 75px;
+    font-weight: 900;
+    font-family: monument;
+    position: relative;
+    color: white;
+}
+
+#page1 h1::before{
+  
+    content: "EAT. DRINK. PLAY.";
+    position: absolute;
+    color: black;
+    top: -4px;
+    left: -4px;
+    -webkit-text-stroke: 2px #95c11e;
+    z-index: -1;
+}
+
+#page1 h2{
+    font-size: 18px;
+    font-weight: 900;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#page1 p{
+    font-size: 13px;
+    font-weight: 400;
+    width: 40%;
+    font-family: gilroy;
+}
+
+#page1 #narrow{
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    left: -3%;
+    bottom: -0.0%;
+    background-color: transparent;
+    border: 2px solid #95c11e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: all ease 0.5s;
+}
+
+#page1 #narrow:hover{
+    scale: 0.4;
+    background-color: #95c11e;
+}
+
+ #narrow i{
+    font-size: 50px;
+    font-weight: 100;
+    
+}
+
+#page2{
+    min-height: 100vh;
+    width: 100%;
+    z-index: 10;
+} 
+
+#scroller{
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    position: relative;
+    z-index: 10;
+}
+
+#scroller-inner{
+    display: inline-block;
+    white-space: nowrap;
+    animation-name: booboo;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+#scroller::-webkit-scrollbar{
+    display: none;
+}
+
+#scroller h4{
+    display: inline-block;
+    font-size: 100px;
+    font-family: gilroy;
+    font-weight: 900;
+    margin-right: 10px;
+    -webkit-text-stroke: 2px white;
+    color: black;
+    transition: all linear 0.5s;
+}
+
+#scroller h4:hover{
+    color: #95c11e;
+}
+
+@keyframes booboo {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+
+#about-us{
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 50px;
+    position: relative;
+    z-index: 99;
+}
+
+#about-us img{
+    height: 200px;
+    width: 200px;
+    border-radius:20px;
+    object-fit: cover;
+}
+
+#about-inn{
+    width: 40%;
+    text-align: center;
+}
+
+#about-inn h3{
+    font-size: 40px;
+    font-weight: 800;
+    margin-bottom: 20px;
+    
+}
+
+#about-inn p{
+    font-size: 15px;
+    font-weight: 400;
+    font-family: gilroy;
+    line-height: 18px;
+    letter-spacing: 0.5px;
+}
+
+#card-container{
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+    position: relative;
+    
+}
+
+.card{
+    height: 90%;
+    width: 25%;
+    overflow: hidden;
+    border-radius: 20px;
+    z-index: 10;
+}
+
+.card h2{
+    color: #95c11e;
+    font-size: 30px;
+    font-family: gilroy;
+    font-weight: 700;
+    position: absolute;
+    bottom: 5%;
+    left: 2%;
+}
+
+#card-1 {
+    background-image: url(https://eiwgew27fhz.exactdn.com/wp-content/uploads/2023/02/home-toptracer-1024x682.jpg?strip=all&lossy=1&sharp=1&ssl=1);
+    background-position: center;
+    background-size: cover;
+}
+
+#card-2 {
+    background-image: url(https://eiwgew27fhz.exactdn.com/wp-content/uploads/2023/02/hero-4-1024x1024.jpg?strip=all&lossy=1&sharp=1&ssl=1);
+    background-position: center;
+    background-size: cover;
+}
+
+#card-3 {
+    background-image: url(https://eiwgew27fhz.exactdn.com/wp-content/uploads/2023/02/home-lessons-1024x682.jpg?strip=all&lossy=1&sharp=1&ssl=1);
+    background-position: center;
+    background-size: cover;
+}
+
+.overlay{
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+    padding-top: 150px;
+    background-color: #95c11e;
+    opacity: 0;
+    transition: all ease 0.6s;
+}
+
+.overlay h4{
+    color: #000;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-bottom: 20px;
+    white-space: nowrap;
+}
+
+.overlay p{
+    color: #000;
+    font-size: 12px;
+    font-family: gilroy;
+    font-weight: 600;
+}
+
+.card:hover .overlay{
+    opacity: 1;
+}
+
+.card:hover{
+    transform: rotate3d(-1,-1,0,20deg);
+}
+
+#green{
+    height: 40vh;
+    background: linear-gradient(to left bottom,#22A436,#ace022);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 333;
+    position: relative;
+}
+
+#green h4{
+    width: 50%;
+    font-size: 24px;
+    font-family: gilroy;
+    font-weight: 500;
+    line-height: 40px;
+    color: #000;
+    text-align: center;
+}
+
+#green img{
+    
+    height: 100%;
+    object-fit: cover;
+    width: 14%;
+}
+
+#foodzone{
+    height: 130vh;
+    width: 100%;
+    background-color: #000;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 50px;
+    padding-bottom: 20px;
+    padding-left: 600px;
+}
+
+#foodzone #three-dot{
+    position: absolute;
+     top: 70%;
+     left: 25%;
+     display: flex;
+     gap: 10px;
+}
+
+#foodzone #three-dot i{
+    display: flex;
+    z-index: 99;
+    height: 30px;
+    width: 30px;
+    align-items: center;
+    padding-left: 3px;
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #95c11e;
+    transition: all ease 0.3s;
+}
+
+#foodzone #three-dot i:hover{
+    border: 20px;
+    border: 2px solid #089D3C;
+}
+
+
+#foodzone h2{
+    padding-right: 80px;
+    z-index: 10;
+    font-size: 40px;
+    font-family: gilroy;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+#foodzone p{
+    z-index: 10;
+    font-size: 20px;
+    font-family: gilroy;
+    font-weight: 500;
+    line-height: 30px;
+}
+
+#foodzone button{
+    height: 50px;
+    width: 150px;
+    margin-right: 280px;
+    background-color: #000;
+    z-index: 10;
+    border: 2px solid #95c11e;
+    border-radius: 50px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+button #rout{
+  height: 0px;
+  width: 0px;
+  background: linear-gradient(to left bottom,#A5D621,#95c11e,#22A436);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  border-radius: 50%;
+  transition: ease 0.4s;
+}
+
+button:hover #rout{
+    height: 70px;
+    width: 175px;
+  }
+  
+
+button h3{
+    color: #fff;
+    font-size: 18px;
+    font-family: gilroy;
+    font-weight: 500;
+    z-index: 99;
+    transition: all ease 0.4s;
+    position: relative;
+}
+
+button:hover h3{
+    color: black;
+    font-family: gilroy;
+    font-weight: 600;
+}
+
+
+#foodzone #lil1{
+    position: absolute;
+    top: 15%;
+    left: 7%;
+    height: 380px;
+    width: 530px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    z-index: 10;
+}
+
+#foodzone #lil2{
+    position: absolute;
+    top: 15%;
+    left: 7%;
+    height: 380px;
+    width: 530px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    z-index: 10;
+    opacity: 0;
+}
+
+#foodzone #lil3{
+    position: absolute;
+    top: 15%;
+    left: 7%;
+    height: 380px;
+    width: 530px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    z-index: 10;
+    opacity: 0;
+}
+
+#strangers{
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    position: relative;
+    z-index: 10;
+    cursor: pointer;
+}
+
+#scroll1{
+    height: 80%;
+    display: inline-block;
+    white-space: nowrap;
+    animation-name: moveon;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    
+}
+
+#strangers::-webkit-scrollbar{
+    display: none;
+}
+
+#scroll1 img{
+    filter: drop-shadow(2px 5px 5px #95c11e);
+    display: inline-block;
+    height: 220px;
+    width: 220px;
+    object-fit: cover;
+    margin-right: 40px;
+    border-radius: 20px;
+    transform: rotate3d(-1,-1,0,20deg);
+    transition: all linear 0.5s;
+}
+
+#scroll1 img:hover{
+    scale: 1.1;
+    animation-play-state: paused;
+}
+
+@keyframes moveon {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+
+
+#page3{
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;    
+}
+
+#page3>p{
+    font-size: 22px;
+    font-weight: 600;
+    width: 60%;
+    font-family: Montserrat,sans-serif;
+    line-height: 35px;
+    text-align: center;
+    z-index: 10;
+}
+
+#page3 img{
+    position: absolute;
+    height: 40px;
+    z-index: 10;
+}
+
+#page3 #colon1{
+    left: 13%;
+    top: 25%;
+
+}
+
+#page3 #colon2{
+    bottom: 25%;
+    right: 15%;
+}
+
+#page4{
+    height: 40vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    position: relative;
+    z-index: 99;
+}
+
+#page4 h1{
+    font-size: 75px;
+    position: absolute;
+    font-weight: 900;
+    top: -4%;
+    color: #000;
+    font-family: gilroy;
+    -webkit-text-stroke: 1px #ffff;
+}
+
+.elem{
+    height: 55%;
+    width: 27%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.elem h2{
+    height: 100%;
+    width: 100%;
+    transition: all ease 0.5s;
+    background-color: #95c11e;
+    color: #000;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    position: absolute;
+    z-index: 10; 
+}
+
+.elem img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: all ease 0.6s;
+    scale: 1.1;
+}
+
+.elem:hover h2{
+    color: #fff;
+    background-color: transparent;
+}
+
+.elem:hover img{
+    scale: 1;
+}
+
+#down-div{
+    height: 50vh;
+    width: 100%;
+    background: linear-gradient(to right top,#A5D621,#96c11ece,#089D3C);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 100px;
+    padding: 0 100px;
+    z-index: 99;
+}
+
+#down-div>img{
+    position: absolute;
+    left: 0;
+    height: 100%;
+    z-index: 0;
+}
+
+#vixen1 img{
+    height: 90px;
+    margin-top: 40px;
+}
+
+
+#vixen1,#vixen2,#vixen3,#vixen4{
+    width: fit-content;
+    position: relative;
+    z-index: 2;
+    cursor: pointer;
+}
+
+#vixen2 h3{
+    font: 30px;
+    white-space: nowrap;
+    text-transform: uppercase;
+    color: #000;
+    font-weight: 900;
+    margin-top: 8px;
+    transition: all ease 0.3s;
+}
+
+#vixen2 h3:hover{
+    scale: 1.1;
+    color: #fff;
+}
+
+#vixen3 h3{
+    font: 30px;
+    white-space: nowrap;
+    text-transform: uppercase;
+    color: #000;
+    font-weight: 900;
+    margin-top: 8px;
+    transition: all ease 0.3s;
+}
+
+#vixen3 h3:hover{
+    scale: 1.1;
+    color: #fff;
+}
+
+#vixen4 h4{
+    font-size: 15px;
+    white-space: nowrap;
+    text-transform: uppercase;
+    color: #000;
+    font-weight: 600;
+    line-height: 20px;
+    margin-top: 40px;
+}
+
+#vixen4 span{
+    font-weight: 800;
+    color: #000;
+    transition: all ease 0.3s;
+}
+
+#vixen4 span:hover{
+    scale: 1.1;
+    color: #fff;
+}
+
+#down-div #line1{
+    position: absolute;
+    bottom: 6%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 190px;
+}
+
+#line1 p{
+    font-size: 13px;
+    font-family: gilroy;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: #000;
+}
+
+#line1 .cool{
+    color: #000;
+    cursor: pointer;
+    transition: all ease 0.3s;
+}
+
+#line1 .cool:hover{
+    scale: 1.1;
+    color: #fff;
+}
+
+#line1 h5{
+    font-size: 12px;
+    font-family: gilroy;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #000;
+    letter-spacing: 0.7px;
+}
+
+#down-div #icon{
+    position: relative;
+    display: flex;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+#icon i{
+    font-size: 30px;
+    color: #000;
+    transition: all ease 0.3s;
+}
+
+#icon i:hover{
+    scale: 1.2;
+    color: #fff;
+}

@@ -1,0 +1,79 @@
+@font-face {
+    font-family: lululu;
+    src: url(./RightGrotesk-CompactBlack.otf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+}
+
+html,body {
+    width: 100%;
+    height: 100%;
+
+}
+
+#page1 {
+    height: 100%;
+    width: 100%;
+    background-image: url(https://images.prismic.io/yubo/6118791b-2978-4f39-bc06-0d5d43cd6e93_LargeGraphics.webp?auto=compress,format&rect=0,0,1600,900&w=1680&h=945);
+
+}
+
+#page1 h1{
+    color: yellow;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    font-family: RightGrotesk-CompactBlack;
+    font-size: 120px;
+    font-family: gilroy;
+    line-height: 130px;
+
+}
+
+#page1 img{
+    position: absolute;
+    top: 5%;
+    left: 45%;
+    height: 10%;
+    width: 10%;
+}
+
+#icon1 i{
+    position: absolute;
+    top: 5%;
+    left: 3%;
+    color: white;
+    font-size: 30px;
+}
+
+#icon2 #apple{
+    position: absolute;
+    top: 5%;
+    left: 70%;
+    height: 20%;
+    width: 20%;
+    padding: 14px 100px;
+    border-radius: 0%;
+    background-color: yellow;
+    color: white;
+    font-size: 30px;
+}
+
+#icon2 #android{
+    position: absolute;
+    top: 5%;
+    left: 70%;
+    height: 20%;
+    width: 20%;
+    padding: 14px 100px;
+    border-radius: 0%;
+    background-color: yellow;
+    color: white;
+    font-size: 30px;
+}

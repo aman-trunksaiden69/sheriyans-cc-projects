@@ -1,0 +1,474 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+html,body {
+    width: 100%;
+    height: 100%;
+
+}
+
+#header{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+}
+
+#header img {
+    position: absolute;
+    top: 48%;
+    left: 45%;
+    height: 73%;
+    width:88%;
+    transform: translate(-50%,-50%);
+}
+
+
+#header #four{
+    position: absolute;
+    top: 15.4%;
+    left: 23%;
+    display: flex;
+    gap: 33px;
+    font-size: 8.5px;
+    font-family: gilroy;
+    text-transform: uppercase;
+    white-space: nowrap;
+    color: whitesmoke;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    transition: all ease 0.5s;
+}
+
+#header #four .moon1{
+    background-color: rgba(216, 112, 147, 0.672);
+    height: 40%;
+    width: 30%;
+    padding: 9px 22px;
+}
+
+
+#header #shoes{
+    position: absolute;
+    top:25%;
+    left: 44%;
+    height: 100%;
+    width: 53%;
+    z-index: 999;
+    rotate: -20deg;
+}
+
+#wind1 {
+    height: 100%;
+    width: 25%;
+    background-color: rgba(190, 66, 190, 0.861);
+}
+
+#wind1 #girl{
+    position: absolute;
+    top: 27%;
+    left: 19%;
+    height: 23%;
+    width: 9%;
+    background-size: cover;
+}
+
+#wind1 #add1{
+    height: 4%;
+    width: 2%;
+    background-color: salmon;
+    color: yellow;
+    position: absolute;
+    top: 16%;
+    left: 20.8%;
+    font-weight: 600;
+    text-align: center;
+    padding-top: 5px;
+    border-radius: 55%;
+}
+
+#wind1 #add2{
+    height: 4%;
+    width: 2%;
+    background-color: salmon;
+    color: yellow;
+    position: absolute;
+    top: 34%;
+    left: 15%;
+    font-weight: 600;
+    text-align: center;
+    padding-top: 5px;
+    border-radius: 55%;
+}
+
+#wind1 #nav1 {
+    position: absolute;
+    top: 80%;
+    left: 8%;
+    color: whitesmoke;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: gilroy;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    line-height: 10px;
+}
+
+
+#nav1 .no{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+#wind1 #nav1 h4{
+    
+    top: 89%;
+    left: 10%;
+    color: whitesmoke;
+    font-size: 14px;
+    font-family: gilroy;
+    display: flex;
+}
+
+#nav1 #bg{
+    background-color: rgba(245, 245, 245, 0.497);
+    height: 24px;
+    width: 24px;
+    padding: 7.4px 2px;
+    border-radius: 5px;
+}
+
+
+#wind2{
+    height: 100%;
+    width: 75%;
+    background-color: rgba(165, 42, 42, 0.352);
+}
+
+#header #tag1{
+    height: 8%;
+    width:4%;
+    position: absolute;
+    background-color: salmon;
+    top: 40%;
+    left: 33%;
+    z-index: 999;
+    text-align: center;
+   padding-top: 13px;
+   font-weight: 700;
+   border-radius: 60%;
+   font-size: 24px;
+   color: yellow;
+}
+
+#header #tag2{
+    height: 8%;
+    width:4%;
+    position:absolute;
+    background-color: salmon;
+    top: 65%;
+    left: 20%;
+    z-index: 999;
+    text-align: center;
+   padding-top: 13px;
+   font-weight: 700;
+   border-radius: 60%;
+   font-size: 24px;
+   color: yellow;
+}
+
+#header #tag3{
+    height: 8%;
+    width:4%;
+    position:absolute;
+    background-color: salmon;
+    top: 50%;
+    left: 53%;
+    z-index: 999;
+    text-align: center;
+   padding-top: 13px;
+   font-weight: 700;
+   border-radius: 60%;
+   font-size: 24px;
+   color: yellow;
+}
+
+#wind2 input{
+    position: absolute;
+    top: 1%;
+    left: 30%;
+    background-color: transparent;
+    padding: 5px 25px;
+    font-size: 18px;
+    border: none;
+    border-bottom: 2px solid white;
+
+}
+
+::placeholder { 
+    color: white;
+    opacity: 90%;
+  }
+
+#wind2 #meow{
+    font-size: 23px;
+    color: rgba(128, 0, 128, 0.431);
+    font-weight: 500;
+    z-index: 99;
+    position: absolute;
+    top: 1.7%;
+    left: 30%;
+}
+
+#wind2 h1{
+    position: absolute;
+    top: 1%;
+    left: 60%;
+    font-size: 44px;
+    font-weight: 300;
+    color: whitesmoke;
+    text-transform: uppercase;
+    letter-spacing: 18px;
+    font-family: gilroy;
+    transition: all ease 0.5s;
+}
+
+#wind2 h1:hover{
+    color: palevioletred;
+}
+
+#wind2 h2{
+    position: absolute;
+    top: 58%;
+    left: 45%;
+    font-size: 130px;
+    font-weight: 500;
+    font-family: gilroy;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.407);
+}
+
+#wind2 h3{
+    position: absolute;
+    top: 78%;
+    left: 35%;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: gilroy;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.653);
+    letter-spacing: 3px;
+}
+
+
+#wind2 h5{
+    position: absolute;
+    top: 10%;
+    left: 77%;
+    font-size: 18px;
+    font-family: gilroy;
+    font-weight: 600;
+    color: whitesmoke;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+}
+
+#wind2 #color1{
+    position: absolute;
+    top: 15%;
+    left: 81%;
+    background-color: rgba(165, 42, 42, 0.245);
+    height: 18%;
+    width: 9%;
+    border-radius: 20%;
+}
+
+#wind2 #color2{
+    position: absolute;
+    top: 40%;
+    left: 81%;
+    background-color: rgba(255, 240, 245, 0.826);
+    height: 18%;
+    width: 9%;
+    border-radius: 20%;
+}
+
+#wind2 #color3{
+    position: absolute;
+    top: 65%;
+    left: 81%;
+    background-color: rgba(102, 51, 153, 0.653);
+    height: 18%;
+    width: 9%;
+    border-radius: 20%;
+}
+
+#wind2 h4{
+    color: black;
+    position: absolute;
+    top: 87%;
+    left: 81%;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: gilroy;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+#img1 #ciao{
+    position: absolute;
+    top: 23%;
+    left: 82%;
+    height: 33%;
+    width: 13%;
+    background-size: cover;
+   transition: all ease 0.5s;
+}
+
+#img1 #ciao:hover{
+    scale: 1.2;
+}
+
+#img2 #salut{
+    position: absolute;
+    top: 47%;
+    left: 82%;
+    height: 16%;
+    width: 13%;
+    background-size: cover;
+    transition: all ease 0.5s;
+}
+
+#img2 #salut:hover{
+    scale: 1.2;
+}
+
+#img3 #hello{
+    position: absolute;
+    top: 73%;
+    left: 82%;
+    height: 16%;
+    width: 13%;
+    background-size: cover;
+    transition: all ease 0.5s;
+}
+
+#img3 #hello:hover{
+    scale: 1.2;
+}
+
+#wind2 #fit{
+    position: absolute;
+    top: 87%;
+    left: 35%;
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: whitesmoke;
+}
+
+#wind2 #log1{
+    position: absolute;
+    top: 87%;
+    left: 47%;
+    height: 6%;
+    width: 13%;
+    padding: 6px 5px;
+    background-color: rgb(216, 112, 147);
+    color: whitesmoke;
+    text-align: center;
+    font-size: 18px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    
+}
+
+#wind2 #log1 i{
+    color: yellow;
+    position: absolute;
+    top: 17%;
+    left: 3%;
+    font-weight: 600;
+}
+
+#four-color #plum{
+    position: absolute;
+    top: 90%;
+    left: 82%;
+    height: 20px;
+    width: 20px;
+    background-color: purple;
+    border-radius: 50%;
+}
+
+#four-color #skyblue{
+    position: absolute;
+    top: 90%;
+    left: 84%;
+    height: 20px;
+    width: 20px;
+    background-color: skyblue;
+    border-radius: 50%;
+}
+
+#four-color #darkgreen{
+    position: absolute;
+    top: 90%;
+    left: 86%;
+    height: 20px;
+    width: 20px;
+    background-color: darkgreen;
+    border-radius: 50%;
+}
+
+#four-color #yellow{
+    position: absolute;
+    top: 90%;
+    left: 88%;
+    height: 20px;
+    width: 20px;
+    background-color: yellow;
+    border-radius: 50%;
+}
+
+#container{
+    height: 8%;
+    width: 15%;
+    background-color: whitesmoke;
+    position: absolute;
+    top: 1%;
+    left: 12%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+
+#container i{
+    padding-left: 10px;
+    color: rgba(0, 0, 0, 0.719);
+    font-size: 17px;
+    font-weight: 800;
+}
+
+#container h4{
+    padding-top: 2px;    
+    font-size: 14px;
+    font-weight: 500;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgba(0, 0, 0, 0.722);
+    text-transform: uppercase;
+}

@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+#black{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    
+}
+
+#black h1{
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: silver;
+    font-size: 40px;
+    font-family: gilroy;
+    font-weight: 800;
+    filter: drop-shadow(2px 2px 2px mediumorchid);
+    text-transform: capitalize;
+}
+
+#black #three-line{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    border: 3px solid mediumorchid;
+    border-radius: 20px;
+    filter: drop-shadow(5px 5px 5px crimson);
+    transform: translate(-50%,-50%);
+    height: 50%;
+    width: 30%;
+    
+}
+
+#three-line #line1{
+    height: 12px;
+    width: 300px;
+    background-color: wheat;
+    border-radius: 35px;
+    transform-origin: 0 0;
+    filter: drop-shadow(2px 2px  2px crimson);
+    transition: all ease 0.5s;
+}
+
+#three-line #line2{
+    height: 12px;
+    width: 300px;
+    background-color: wheat;
+    border-radius: 35px;
+    cursor: pointer;
+    filter: drop-shadow(2px 2px  2px crimson);
+    transform-origin: 0 0;
+    transition: all ease 0.2s;
+}
+
+#three-line #line3{
+    height: 12px;
+    width: 300px;
+    background-color: wheat;
+    border-radius: 35px;
+    transform-origin: 0 0;
+    filter: drop-shadow(2px 2px  2px crimson);
+    transition: all ease 0.5s;
+}

@@ -1,0 +1,821 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+#nav {
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    position: fixed;
+    z-index: 999;
+}
+
+.navp1 {
+    height: 100%;
+    width: 50%;
+    padding: 0px 60px;
+    padding-top: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.line-div {
+    width: 50px;
+    color: #434B34;
+    cursor: pointer;
+}
+
+.line {
+    height: 3px;
+    width: 100%;
+    background-color: #434B34;
+    margin-bottom: 5px;
+    transition: all ease 0.3s;
+}
+
+.navp2 {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 20px;
+    padding-right: 60px;
+    padding-top: 30px;
+}
+
+#cap1 {
+    width: 200px;
+    background-color: transparent;
+    border: 0.2px solid #434B34;
+    color: #434B34;
+    position: relative;
+    transition: all ease 0.1s;
+    overflow: hidden;
+}
+
+#cap1 p {
+    opacity: 1;
+    color: #434B34;
+}
+
+.capreplica {
+    height: 40px;
+    width: 200px;
+    border-radius: 50px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    transition: all ease 0.1s;
+    cursor: pointer;
+    font-weight: 500;
+    position: absolute;
+    color: #434B34;
+    top: 100%;
+}
+
+.capreplica h2 {
+    font-size: 20px;
+    font-weight: 500;
+    color: #434B34;
+}
+
+/* #cap1:hover {
+    background-color: #E3E3C4;
+}
+#cap1:hover p{
+    opacity: 0;
+}
+.capreplica:hover{
+    top: 0;
+}
+.capreplica:hover h2{
+    opacity: 1;
+} */
+#cap1:hover .capreplica {
+    top: -1%;
+}
+
+#cap1:hover p {
+    opacity: 0;
+}
+
+#cap1:hover {
+    background-color: #E3E3C4;
+}
+
+.capsule {
+    height: 42px;
+    width: 150px;
+    border-radius: 50px;
+    background-color: #434B34;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: 500;
+    color: #fff;
+    cursor: pointer;
+}
+
+#svg1 {
+    fill: #434B34;
+    scale: 0.25;
+    position: absolute;
+    z-index: 99;
+    top: -10%;
+}
+
+#page1 {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+
+}
+
+#page1 img {
+    top: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+
+}
+/* @media (max-width:600px) {
+    #nav{
+        height: 9vh;
+        width: 100%;
+    }
+    #cap1{
+        display: none;
+    }
+    #svg1 {
+        fill: #434B34;
+        scale: 2;
+        position: absolute;
+        z-index: 99;
+        top: 50%;
+    }
+    #page1{
+        height: 90vh;
+        width: 100%;
+    }
+    #page2{
+        height: 90vh;
+        width: ;
+    }
+} */
+#page2{
+    min-height: 150vh;
+    background-color: #5B6647;
+    position: relative;
+}
+
+#svg2{
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+
+#page2 #text-container{
+    position: relative;
+    padding-top: 12vw;
+    z-index: 9;
+}
+#text-container h2{
+    text-align: center;
+    font-size: 5.5vw;
+    line-height: 6vw;
+    color: #E3E3C4;
+    color: #434B34;
+    font-family: PP woodland;
+    font-weight: 100;
+}
+
+#text-container h2 span{
+    font-family: PP woodland;
+}
+ #page2 #svg3{
+    fill: #5B6647;
+    position: absolute;
+    scale: 2;
+    bottom: -5%;
+    z-index: 9;
+}
+#page2 #svg4{
+    fill: #E3E3C4;
+    position: absolute;
+    scale: 2;
+    bottom: -5%;
+    left: 50%;
+}
+#page3{
+    min-height: 100vh;
+    width: 100%;
+    background-color: #F7F7EE;
+    padding: 0px 100px;
+}
+#page3 #text-container1{
+    position: relative;
+    padding-top: 12vw;
+}
+#text-container1 h4{
+    text-align: center;
+    font-size: 5.5vw;
+    line-height: 6vw;
+    color: #E3E3C4;
+    font-family: PP woodland;
+    font-weight: 100;
+}
+#text-container1 h4 span{
+    font-family: PP woodland;
+}
+.explore-room{
+    height: 20vh;
+    width: 30vw;
+    margin-top: 6%;
+    color: #434B34;
+}
+.explore-room p{
+    font-size: 20px;
+    width: 80%;
+}
+.explore-room h3{
+    font-size: 30px;
+}
+.er-bottom{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 30px;
+}
+.p3arrow{
+    height: 30px;
+    width: 60px;
+    border-radius: 20px;
+    background-color: #434B34;
+}
+.right-box{
+    height: 500px;
+    width: 800px;
+    background-color: red;
+    margin-left:45% ;
+    border-radius: 20px;
+    margin-top: -10%;
+    background-position: center;
+    background-size: cover;
+    background-image: url(https://hotelodisej.com/wp-content/uploads/bf-advanced-images/213/ALH_Odisej_deluxe_seaview_balcony_double_01-scaled-800x0.jpg);
+}
+.bottom-left-box{
+    height: 400px;
+    width: 600px;
+    background-color: red;
+    border-radius: 20px;
+    margin-top: -10%;
+    background-position: center;
+    background-size: cover;
+    background-image: url(https://hotelodisej.com/wp-content/uploads/bf-advanced-images/211/ALH_Odisej_Rosemary_suite_05-scaled-800x0.jpg);
+}
+.bottom-small-box{
+    height: 400px;
+    width: 400px;
+    background-color: red;
+    border-radius: 20px;
+    margin-left: 45%;
+    margin-top: -15%;
+    background-image: url(https://hotelodisej.com/wp-content/uploads/bf-advanced-images/215/ALH_Odisej_deluxe_seaview_balcony_double_02-scaled-800x0.jpg);
+    background-position: center;
+    background-size: cover;
+}
+#page4{
+    min-height: 150vh;
+    width: 100%;
+    background-color: #F7F7EE;
+    padding: 0px 100px;
+    padding-top: 100px;
+}
+.page4-boxes{
+    height: 25vh;
+    width: 100%;
+    border:1px solid #434b347d ;
+    border-bottom: none;
+    overflow: hidden;
+    color: #434B34;
+    position: relative;
+    transition: all ease 0.5s;
+}
+.page4-boxes:hover{
+    background-color: #5B6648;
+    color: #E3E3C4;
+}
+.page4-boxes:nth-child(1){
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.page4-boxes:nth-last-child(1){
+    border-bottom: 1px solid #434B34;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.page4-boxes .left{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    margin-left: -23%;
+    align-items: center;
+    transition: all ease 0.5s;
+    
+}
+.page4-boxes .left:hover{
+    margin-left: 0%;
+}
+.page4-boxes img{
+    height: 25vh;
+}
+.page4-boxes h3{
+    font-size: 50px;
+    margin-left: 5%;
+    font-family: PP woodland;
+    font-weight: 100;
+}
+.page4-boxes span{
+    font-size: 20px;
+}
+.p4-capsule{
+    height: 30px;
+    width: 60px;
+    background-color: #434B34;
+    border-radius: 30px;
+    position: absolute;
+    left: 90%;
+    font-weight: 500;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #E3E3C4;
+}
+.page4-boxes:hover .p4-capsule{
+    background-color: #E3E3C4;
+    color: #434B34;
+}
+#page5{
+    height: 100vh;
+    width: 100%;
+    background-color: #F7F7EE;
+    padding-bottom: 15vh;
+    
+  }
+  
+  
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .swiper-slide:nth-last-child(1){
+    width: 20%;
+  }
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(0.6) translateX(-40%) translateY(34%);
+    border-radius: 20px;
+    transition: all ease 1s;
+  
+  }
+  
+  .swiper-slide {
+    width: 80%;
+    padding: 60px;
+  }
+  
+  .swiper-slide-active img{
+    transform: scale(1) translateX(0%) translateY(0%);
+  
+  }
+  
+  
+  .swiper-button-next{
+    color: #fff;
+    background-color: #434b34;
+    padding: 20px 35px;
+    height: 20px;
+    border-radius: 50px;
+    position: absolute;
+    top: 10%;
+    right: 5%;
+  }
+  .swiper-button-prev{
+    color: #fff;
+    background-color: #434b34;
+    padding: 20px 35px;
+    height: 20px;
+    border-radius: 50px;
+    position: absolute;
+    top: 10%;
+    left: 80%;
+  }
+  
+  .swiper-button-next::after{
+    content: "";
+  }
+  .swiper-button-prev::after{
+    content: "";
+  }
+  .swiper-pagination{
+    position: absolute;
+    top: 8%;
+    color: #434B34;
+    font-size: 20px;
+    left: 37%;
+  }
+
+
+
+#page6{
+   min-height: 100vh;
+    width: 100%;
+    background-color: #03364F;
+    position: relative;
+    padding: 0px 100px;
+}
+#page6 #svg5{
+    fill: #03364F;
+    scale: 2;
+    rotate: 180deg;
+    position: absolute;
+    top: -3%;
+    z-index: 9;
+}
+#page6 #svg6{
+    fill: #E3E3C4;
+    scale: 1.5;
+    rotate: 180deg;
+    position: absolute;
+    top: -3%;
+    left: 10%;
+}
+#page6 #text-container2{
+    position: relative;
+    padding-top: 12vw;
+}
+#text-container2 h3{
+    text-align: center;
+    font-size: 5.5vw;
+    line-height: 6vw;
+    color:#043F5D;
+    font-family: PP woodland;
+    font-weight: 100;
+}
+#text-container2 h3 span{
+    font-family: PP woodland;
+}
+#page6 p{
+    width: 40%;
+    color: #E2E2C3;
+    text-align: center;
+    margin-left: 30%;
+    margin-top: 3%;
+    font-weight: 400;
+    font-size: 20px;
+    margin-bottom: 100px;
+}
+
+.page6-images{
+    height: 500px;
+    width: 350px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.page6-images img{
+    height: 220px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+.page6-images h2{
+    font-size: 45px;
+    font-family: PP woodland;
+    color: #E3E3C4;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.page6-images h5{
+    width: 100%;
+    font-size: 16px;
+    color: #E3E3C4;
+    font-weight: 300;
+}
+#p6-img2{
+    margin-left: 80%;
+    margin-top: -33%;
+    
+}
+#p6-img3{
+    margin-left: 50%;
+    margin-top: -20%;
+}
+.dining {
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+
+}
+.dining h4{
+    font-size: 30px;
+    color: #E3E3C4;
+    font-weight: 400;
+}
+.d-arrow{
+    height: 30px;
+    width: 60px;
+    background-color: #E2E2C3;
+    border-radius: 30px;
+}
+
+#page6 #svg7{
+    fill: #03364F;
+    scale: 3;
+    position: absolute;
+    bottom: -5%;
+    z-index: 9;
+}
+#page6 #svg8{
+    fill: #E3E3C4;
+    scale: 2 ;
+    position: absolute;
+    bottom: -5%;
+    left: 10%;
+}
+#page7{
+    min-height: 100vh;
+    width: 100%;
+    background-color: #F7F7EE;
+}
+#page7 #text-container3{
+    position: relative;
+    padding-top: 12vw;
+}
+#text-container3 h2{
+    text-align: center;
+    font-size: 5.5vw;
+    line-height: 6vw;
+    color:#E3E3C4;
+    font-family: PP woodland;
+    font-weight: 100;
+}
+#text-container3 h2 span{
+    font-family: PP woodland;
+}
+
+
+#p7-container{
+    display: flex;
+    flex-shrink: 0;
+}
+.p7-images{
+    height: 800px;
+    width: 50%;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10%;
+}
+.p7-images img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 20px;
+}
+#p7-text{
+    padding: 100px 0px;
+    color: #474F39;
+    display: none;
+    opacity: 0;
+    height: 900px;
+}
+#p7-text h1{
+    font-size: 90px;
+    text-align: center;
+    font-family: PP woodland;
+    margin-bottom: 50px;
+    font-weight: 400    ;
+}
+#p7-text p{
+    width: 70%;
+    text-align: center;
+    font-size: 23px;
+    margin-bottom: 50px;
+
+}
+#p7-text h3{
+    font-size: 35px;
+}
+#page8{
+    min-height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-color: #03364F;
+    background-image: url(https://hotelodisej.com/wp-content/uploads/bf-advanced-images/394/ALH-Odisej-Lakes-1920x0.jpg);
+}
+#page9{
+    min-height: 150vh;
+    width: 100%;
+    background-color: #5B6647;
+    position: relative;
+}
+#page9 #svg9{
+    fill: #5B6647;
+    scale: 2;
+    rotate: 180deg;
+    position: absolute;
+    top: -5%;
+    z-index: 9;
+}
+#page9 #svg10{
+    fill: #E3E3C4;
+    scale: 1;
+    rotate: 180deg;
+    position: absolute;
+    top: -5%;
+    left: 10%;
+}
+#page9 #text-container4{
+    position: relative;
+    padding-top: 12vw;
+}
+#text-container4 h3{
+    text-align: center;
+    font-size: 5.5vw;
+    line-height: 6vw;
+    color:#454D36;
+    font-family: PP woodland;
+    font-weight: 100;
+}
+#text-container4 h3 span{
+    font-family: PP woodland;
+}
+#page9 p{
+    width: 40%;
+    color: #E2E2C3;
+    text-align: center;
+    margin-left: 30%;
+    margin-top: 3%;
+    font-weight: 400;
+    font-size: 20px;
+    margin-bottom: 100px;
+}
+.p9-container{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+}
+.p9-images {
+    height: 600px;
+    width: 400px;
+    background-color: red;
+    border-radius: 30px;
+    
+}
+#p91{
+    height: 350px;
+    width: 400px;
+    background-color: red;
+    margin-top: 25%;
+    background-image: url(https://hotelodisej.com/wp-content/uploads/bf-advanced-images/326/ALH_Hotel_Supetar_Cavtat_Pool26-800x0.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#p92{
+    height: 700px;
+    width: 600px;
+    background-color: red;
+    background-image: url(https://hotelodisej.com/wp-content/uploads/bf-advanced-images/324/ALH_Hotel_Supetar_Cavtat_Pool18-800x0.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#p93{
+    height: 350px;
+    width: 400px;
+    background-color: red;
+    margin-top: -25%;
+    background-image: url(https://hotelodisej.com/wp-content/uploads/bf-advanced-images/322/ALH_Hotel_Supetar_Cavtat_Pool17-800x0.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#page10{
+    min-height: 100vh;
+    width: 100%;
+    background-color: #F7F7EE;
+    display: flex;
+    padding: 50px 100px;
+    padding-top: 100px;
+    color: #434B34;
+    
+}
+#page10 .left{
+    display: flex;
+    height: 500px;
+    width: 50%;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 100px;
+}
+#page10 .left h2{
+    font-size: 50px;
+    font-weight: 400;
+    font-family: PP woodland;
+    margin-bottom: 50px;
+}
+#page10 .left p{
+    font-size: 20px;
+    font-weight: 400;
+    width: 60%;
+    margin-bottom: 50px;
+    
+}
+#page10 .left h3{
+    font-size: 30px;
+    font-weight: 400;
+
+}
+#page10 .right{
+    height: 700px;
+    width: 50%;
+    background-image: url(https://hotelodisej.com/wp-content/uploads/bf-advanced-images/397/ALH_Hotel_Supetar_Cavtat_Pool10-800x0.jpg);
+    border-radius: 20px;
+    background-size: cover;
+    background-position: center;
+}
+#page11{
+    min-height: 100vh;
+    width: 100%;
+    background-color: yellow;
+    background-image: url(https://hotelodisej.com/wp-content/uploads/bf-advanced-images/394/ALH-Odisej-Lakes-1920x0.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 0px 80px;
+    border: 1px solid transparent;
+}
+.p11-content{
+    height: 30vh;
+    width: 100%;
+    background-color: #5B6647;
+    margin-top: 35%; 
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 100px;
+
+}
+.p11-content h2{
+    font-family: PP woodland;
+    font-size: 55px;
+    color:#E2E2C3;
+    font-weight: 200;
+}
+.p11-content h3{
+    font-size: 30px;
+    color: #E2E2C3;
+    font-weight: 400;
+}
+#page12{
+    height: 100vh;
+    width: 100%;
+    background-color: #03364F;
+    background-image: url(last\ page.png);
+    background-position: center;
+    background-size: cover;
+
+}

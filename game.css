@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+#game{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-color: rosybrown;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#game #board{
+    position: relative;
+    height: 95%;
+    width: 80%;
+    background-color: aquamarine;
+    filter: drop-shadow(2px 5px 12px #000);
+    border-radius: 10px;
+}
+
+#board #chart{
+    min-height: 70px;
+    background-color: aqua;
+    border-radius: 10px;
+    border-bottom: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    position: relative;
+}
+
+#chart h3{
+    color: #000;
+    font-size: 18px;
+    font-family: gilroy;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#timer{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    color: #000;
+    font-family: gilroy;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+#chart .box{
+    height: 50px;
+    width: 50px;
+    background-color: #fff;
+    border-radius: 5px;
+    border: 1px solid black;
+    position: relative;
+}
+
+.box h4{ 
+    text-align: center;
+    padding-top: 12px;
+    font-size: 20px;
+    font-family: gilroy;
+    text-transform: uppercase;
+    color: #000;
+}
+
+
+#board #btm{
+    position: absolute;
+    top: 15%;
+    left: 1%;
+    width: 50px;
+    height: 50px;
+    background-color: aqua;
+    border-radius: 50px;
+    gap: 20px;
+    padding: 20px;
+    color: #000;
+    font-family: gilroy;
+}
+
+#board .bubble{
+    display: flex;
+    
+}

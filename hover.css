@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+}
+
+.button-container h2{
+    font-family: gilroy;
+    margin-bottom: 0;
+}
+
+.btn{
+    display: inline-block;
+    background-color: red;
+    text-decoration: none;
+    width: 160px;
+    height: 42px;
+    margin: 24px 0;
+    border-radius: 10px;
+    box-shadow: inset 0 4px 15px rgb(0, 0, 0.2);
+    position: relative;
+  overflow: hidden;    
+}
+
+.btn-test::after,
+.btn-test::before {
+  content: "test";
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  font-family: gilroy;
+  color: antiquewhite;
+  font-weight: 600;
+  text-transform: uppercase;
+  line-height: 2.5;
+  transition: all 400ms;
+  top: 0;
+}
+
+.btn-test:hover::after{
+    top: -36px;
+}
+
+.btn-test::before{
+    content: "completed";
+    top: 36px;
+}
+
+.btn.btn.test-completed:hover::before{
+    top: 0;
+}

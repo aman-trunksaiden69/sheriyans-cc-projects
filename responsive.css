@@ -1,0 +1,564 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+#page1{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+
+#left-1{
+    height: 100%;
+    width: 70%;
+    background-color: #71462f;
+}
+
+#left-1 #nav1{
+    display: flex;
+    position: absolute;
+    top: 7%;
+    left: 4%;
+    gap: 50px;
+}
+
+#nav1 #bad{
+    color: white;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+#left-1 h3{
+    color: sandybrown;
+    font-size: 20px;
+    font-family: gilroy;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+
+#left-1 #cheated{
+    position: absolute;
+    top: 7%;
+    left: 50%;
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+#left-1 input{
+    position: absolute;
+    top: 7%;
+    left: 52%;
+    background-color: transparent;
+    border: none;
+}
+
+::placeholder{
+    color: #eadfd4;
+    font-family: gilroy;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+#left-1 #whyare{
+    position: absolute;
+    top: 30%;
+    left: 10%;
+}
+
+#whyare h1{
+    color: white;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 600;
+    line-height: 70px;
+}
+
+#whyare h2{
+    color: white;
+    font-size: 39px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+#whyare p{
+    position: absolute;
+    top: 110%;
+    color: rgba(255, 255, 255, 0.481);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 19px;
+    font-weight: 400;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+}
+
+#whyare button{
+    position: absolute;
+    top: 170%;
+    color: rgba(0, 0, 0, 0.853);
+    text-transform: capitalize;
+    font-size: 15px;
+    font-weight: 700;
+    background-color: white;
+    height: 20%;
+    width: 25%;
+    border: 1px solid rgba(0, 0, 0, 0.957);
+}
+
+
+#left-1 #hateme{
+    position: absolute;
+    top: 94%;
+    left: 4%;
+    color: white;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+#left-1 #yousuprised{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 85%;
+    left: 10%;
+}
+
+#yousuprised #that{
+    color: sandybrown;
+    font-size: 15px;
+    text-transform: capitalize;
+    font-family: gilroy;
+}
+
+#yousuprised #im{
+    position: absolute;
+    left: 122%;
+    color: sandybrown;
+    font-size: 15px;
+    text-transform: capitalize;
+    font-family: gilroy;
+}
+
+
+#yousuprised #leaving{
+    position: absolute;
+    left: 250%;
+    color: sandybrown;
+    font-size: 15px;
+    text-transform: capitalize;
+    font-family: gilroy;
+}
+
+#left-1 #dontleave{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 90%;
+    left: 10%;
+    gap: 75px;
+    font-size: 12px;
+}
+
+#dontleave #health{
+    color: white;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: capitalize;
+    font-family: gilroy;
+}
+
+#dontleave #for{
+    color: white;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: capitalize;
+    font-family: gilroy;
+}
+
+#dontleave #psycho{
+    color: white;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: capitalize;
+    font-family: gilroy;
+}
+
+
+#right-1{
+    background-color: #eadfd4;
+    height: 100%;
+    width: 30%;
+    position: relative;
+}
+
+#right-1 #america{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    display: flex;
+    gap: 20px;
+}
+
+#america h5{
+    font-size: 15px;
+    margin-top: 10px;
+    font-family: gilroy;
+    color: black;
+    font-weight: 600;    
+
+}
+
+#america img{
+    object-fit: cover;
+    height: 10%;
+    width: 10%;
+    border-radius: 50%;
+}
+
+#right-1 #always{
+     display: flex;
+     position: absolute;
+     top: 5%;
+     left: 80%;
+     gap: 20px;
+}
+
+#right-1 h5{
+    color: black;
+    font-size: 18px;
+    font-family: gilroy;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+#right-1 i{
+    color: white;
+    font-size: 16px;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    padding-top: 10%;
+    border-radius: 20px;
+    background-color: #a08875;
+    font-weight: 600;
+    margin-top: 8px;
+}
+
+#right-1 h2{
+    position: absolute;
+    top: 80%;
+    left: 20%;
+    font-size: 18px;
+    text-transform: capitalize;
+    font-weight: 600;
+    color: #71462f;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#right-1 #bag2{
+    position: absolute;
+    top: 33%;
+    left: 80%;
+    height: 9%;
+    width: 20%;
+    object-fit: cover;
+    filter: drop-shadow(5px 5px 5px #000000);
+}
+
+#right-1 #bag3{
+    position: absolute;
+    top: 50%;
+    left: 80%;
+    height: 9%;
+    width: 20%;
+    object-fit: cover;
+    filter: drop-shadow(5px 5px 5px #000000);
+}
+
+#right-1 #bag4{
+    position: absolute;
+    top: 66%;
+    left: 80%;
+    height: 12%;
+    width: 20%;
+    object-fit: cover;
+    filter: drop-shadow(5px 5px 5px #000000);
+}
+
+#right-1 #nav-2{
+    position: absolute;
+    top: 85%;
+    left: 12%;
+    height: 12%;
+    width: 75%;
+    background-color: lavenderblush;
+    border-radius: 20px;
+}
+
+#nav-2 h4{
+    padding-top: 6%;
+    padding-left: 12%;
+    text-align: center;
+    font-size: 12px;
+    font-family: gilroy;
+    text-transform: capitalize;
+    color: palevioletred;
+}
+ #nav-2 #hyp1{
+    position: absolute;
+    top: 15%;
+    left: 20%;
+    background-color: transparent;
+    align-items: center;
+    color: darkgoldenrod;
+    font-size: 17px;
+}
+
+#nav-2 #hyp2{
+    position: absolute;
+    top: 15%;
+    left: 25%;
+    background-color: transparent;
+    align-items: center;
+    color: darkgoldenrod;
+    font-size: 17px;
+}
+
+#nav-2 #hyp3{
+    position: absolute;
+    top: 15%;
+    left: 30%;
+    background-color: transparent;
+    align-items: center;
+    color: darkgoldenrod;
+    font-size: 17px;
+}
+
+#nav-2 #hyp4{
+    position: absolute;
+    top: 15%;
+    left: 35%;
+    background-color: transparent;
+    align-items: center;
+    color: darkgoldenrod;
+    font-size: 17px;
+}
+
+#right-1 #bag5{
+    position: absolute;
+    top: 86%;
+    left: 1%;
+    z-index: 999;
+    filter: drop-shadow(2px 2px 2px #000000);
+    height: 10%;
+    width: 20%;
+    object-fit: cover;
+}
+
+#page1 #bag1{
+    position: absolute;
+    top: 25%;
+    left: 52%; 
+    height: 52%;
+    width: 35%;
+    object-fit: cover;
+    z-index: 999;
+    filter: drop-shadow(5px 5px 5px #000000);
+}
+
+@media (max-width:500px) {
+    #page1{
+        flex-direction: column;
+    }
+    #page1 #left-1{
+        width: 100%;
+        height: 120%;
+        position: relative;
+
+    }
+    #left-1 #cheated{
+        position: absolute;
+        top: 8%;
+        left: 75%;
+    }
+    #left-1 input{
+        position: absolute;
+        top: 8%;
+        left: 80%;
+    }
+    #left-1 #whyare{
+        position: absolute;
+        top: 45%;
+        left: 25%;
+        height: 50%;
+        width: 50%;
+    
+    }
+
+    #page1 #bag1{
+        position: absolute;
+        top: 18%;
+        left: 30%;
+        height: 15%;
+        width: 37%;
+    }
+    #whyare h1{
+        position: absolute;
+        left: 35%;
+        top: 30%;
+        font-size: 13px;
+        line-height: 25px;
+    }
+    #whyare h2{
+        font-size: 17px;
+        position: absolute;
+        top: 45%;
+    }
+    #whyare p{
+        position: absolute;
+        top: 75%;
+        font-size: 5px;
+        font-family: gilroy;
+    }
+    #whyare button{
+        position: absolute;
+        top: 93%;
+        left: 28%;
+        height: 12%;
+        width: 40%;
+        font-size: 10px;
+        font-weight: 700;
+        color: black;
+        text-transform: capitalize;
+        border: none;
+        border-radius: 10px;
+        border: 1px solid black;
+    }
+
+
+    #left-1 #yousuprised {
+        visibility: hidden;
+    }
+    #left-1 #dontleave{
+        visibility: hidden;
+    }
+    #left-1 #hateme{
+        visibility: hidden;
+    }
+    #left-1 #nav1{
+        position: absolute;
+        top: 8%;
+        gap: 10px;
+    }
+    #nav1 h3{
+        
+        font-size: 15px;
+    }
+    #nav1 #bad{
+        font-size: 15px;
+        font-weight: 400;
+        justify-content: space-between;
+    }
+    #page1 #right-1{
+        width: 100%;
+    }
+    #right-1 #america{
+        display: flex;
+        gap: 5px;
+    }
+    #right-1 #america img{
+        height: 5%;
+        width: 5%;
+        object-fit: cover;
+    } 
+    #america h5{
+        margin-top: 3px;
+        font-size: 12px;
+    }  
+    #right-1 #always h5{
+        visibility: hidden;
+    }
+    #always #with{
+        font-size: 15px;
+        margin-top: 3%;
+        height: 0;
+        width: 0;
+        color: #71462f;
+    }
+    #right-1 #bag2{
+        position: absolute;
+        top: 45%;
+        left: 6%;
+        height: 20%;
+        width: 20%;
+        object-fit: cover;
+    }
+    #right-1 #bag3{
+        position: absolute;
+        top: 20%;
+        left: 40%;
+        height: 18%;
+        width: 20%;
+        object-fit: cover;
+    }
+    #right-1 #bag4{
+        position: absolute;
+        top: 44%;
+        left: 74%;
+        height: 20%;
+        width: 20%;
+        object-fit: cover;
+    }
+    #right-1 h2{
+        position: absolute;
+        top: 54%;
+        left: 36%;
+        font-size: 15px;
+    }
+    #right-1 #nav-2{
+        position: absolute;
+        top: 80%;
+        left: 26%;
+        height: 15%;
+        width: 50%;
+    }
+    #nav-2 h4{
+        font-size: 6px;
+    }
+    #nav-2 #hyp1{
+        position: absolute;
+        top: 5%;
+        font-size: 8px;
+    } 
+    #nav-2 #hyp2{
+        position: absolute;
+        top: 5%;
+        font-size: 8px;
+    } 
+    #nav-2 #hyp3{
+        position: absolute;
+        top: 5%;
+        font-size: 8px;
+    } 
+    #nav-2 #hyp4{
+        position: absolute;
+        top: 5%;
+        font-size: 8px;
+    }
+    #right-1 #bag5{
+        position: absolute;
+        top: 79%;
+        left: 20%;
+        height: 15%;
+        width: 15%;
+    } 
+}

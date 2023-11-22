@@ -1,0 +1,1269 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+html,body {
+    width: 100%;
+    height: 100%;
+
+}
+#page1 {
+    height: 100%;
+    width: 100%;
+}
+#nav {
+  height: 45px;
+  width: 100%;
+  display: flex;  
+  justify-content: space-evenly;
+  align-items: center;  
+  padding-left: 100px;
+  padding-right: 100px;
+  background-color: rgb(92, 91, 91);
+}
+
+#nav h4{
+    color: rgba(255, 255, 255, 0.801);
+    filter: opacity(60%);
+    filter: contrast(70%);
+    filter: saturate(30%);
+    font-size: 14px;
+    font-weight: 500;
+    font-family: gilroy;
+    transition: all ease 0.2s;    
+}
+
+#nav h4:hover{
+    scale: 1.2;
+    color: black;
+    font-weight: 500;
+    text-decoration: underline;
+}
+#nav i {
+    color: rgba(255, 255, 255, 0.793);
+    filter: brightness(90%);
+    filter: contrast(70%);
+    fill-opacity: 70px;
+    font-size: 17px;
+    transition: all ease 0.2s;
+}
+
+#nav i:hover{
+  
+  color: black;
+}
+
+#nav2 {
+    height: 46px;
+    width: 100%;
+    background-color: rgb(248, 245, 245);
+    justify-content: center;
+    display: flex;
+    align-items: center;  
+}
+
+#nav2 p{
+font-size: 16.7px;
+font-weight: 500;
+color: rgba(0, 0, 0, 0.554);
+filter: opacity(75%);
+font-family: gilroy;
+animation-name: anime;
+animation-duration: 13s;
+animation-iteration-count: infinite;
+animation-direction: forward;
+animation-timing-function: linear;
+transition: all ease 0.2s;
+}
+
+#nav2 p:hover {
+    animation-play-state: paused;
+    scale: 1.2;
+    color: black;
+}
+
+#nav2 a{
+    text-decoration: none;
+    color: royalblue;
+    text-transform: lowercase;
+    font-size: 18px;    
+}
+
+
+@keyframes anime {
+    0%{
+        transform: translate(0);
+    }
+    100%{
+        transform: translatex(calc(-100% - 10px));
+    }
+}
+
+#center {
+    background-image: url(https://www.apple.com/in/home/images/heroes/iphone-14-pro/hero_iphone14pro_spring__9xo85pm6sbmm_largetall_2x.jpg);
+    height: 85%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    background-color: black;
+}
+#center h1{
+position: absolute;
+color: white;
+left: 50%;
+top: 9%;
+font-size: 65px;
+transform: translate(-50%,0);
+font-weight: 600;
+font-family: 'Times New Roman', Times, serif;
+text-transform: lowercase;
+}
+
+#center h2{    
+position: absolute;
+color: white;
+left: 50%;
+top: 22%;
+font-size: 30px;
+transform: translate(-50%,0);
+font-weight: 500;
+font-family: gilroy;
+text-transform: capitalize;
+}
+
+#center h3 {
+    display: flex;
+    top: 33%;
+    left: 50%;
+    gap: 35px;
+    position: absolute;
+    font-weight: 500;
+    transform: translate(-50%,0);
+    font-size: 23px;
+    font-family: gilroy;
+    text-transform: capitalize;
+    transition: all ease 0.5s;
+}
+
+#center h3 a{
+    color: royalblue;
+    text-decoration: none;
+}
+
+#center h3 a:hover{
+    scale: 1.2;
+}
+
+#page2 {
+    height: 100%;
+    width: 100%;
+    background-image: url(https://www.apple.com/in/home/heroes/iphone-14/images/hero_iphone14_yellow__eun20sn4imi6_largetall.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    
+}
+#page2 h1{
+    position: absolute;
+    color: black;
+    left: 50%;
+    top: 7%;
+    font-size: 60px;
+    transform: translate(-50%,0);
+    font-weight: 600;
+    filter: opacity(92%);
+}
+
+
+#page2 h2{
+    position: absolute;
+color: black;
+left: 50%;
+top: 20%;
+font-size: 25px;
+transform: translate(-50%,0);
+text-transform: uppercase;
+filter: opacity(85%);
+}
+
+#page2 h3{
+    position: absolute;
+color: black;
+left: 50%;
+top: 25%;
+font-size: 25px;
+transform: translate(-50%,0);
+text-transform: uppercase;
+filter: opacity(85%);
+}
+
+#page2 h4 {
+    display: flex;
+    top: 32%;
+    left: 50%;
+    gap: 35px;
+    position: absolute;
+    font-weight: 500;
+    transform: translate(-50%,0);
+    font-size: 24px;
+    font-family: gilroy;
+    text-transform: capitalize;
+    transition: all ease 0.5s;
+}
+#page2 h4 a{
+    color: royalblue;
+    text-decoration: none;
+}
+
+#page2 h4 a:hover{
+    scale: 1.2;
+
+}
+
+#page3 {
+    height: 100%;
+    width: 100%;
+    background-image: url(https://www.apple.com/kr/home/az/images/heroes/apple-watch-series-8/hero_apple_watch_series_8_spring__b1y8wb7xjc9y_largetall_2x.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    
+}
+
+#page3 h1{
+    position: absolute;
+color: white;
+left: 50%;
+top: 9.6%;
+font-size: 63px;
+font-weight: 600;
+transform: translate(-50%,0);
+}
+
+
+#page3 i{
+position: absolute;
+color: white;
+left: 42%;
+top: 11%;
+font-size: 50px;
+transform: translate(-50%,0);
+}
+
+
+#page3 h2{
+    position: absolute;
+    color: rgb(199, 24, 24);
+    left: 49%;
+    top: 21%;
+    font-size: 20px;
+    transform: translate(-50%,0);
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+#page3 h3{
+    position: absolute;
+color: white;
+left: 49%;
+top: 26%;
+font-size: 27px;
+font-weight: 600;
+transform: translate(-50%,0);
+text-transform: uppercase;
+}
+
+#page3 h4 {
+    display: flex;
+    top: 33%;
+    left: 49%;
+    gap: 35px;
+    position: absolute;
+    font-weight: 500;
+    transform: translate(-50%,0);
+    font-size: 22px;
+    font-family: gilroy;
+    text-transform: capitalize;
+    transition: all ease 0.5s;
+}
+
+#page3 h4 a{
+    color: royalblue;
+    text-decoration: none;   
+}
+
+#page3 h4 a:hover{
+    scale: 1.2;
+}
+
+#page4 {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    display: flex;
+}
+
+#page4 #nav1{
+    height: 100%;
+    width: 50%;
+    border: solid 10px;
+    border-color: lavender;
+    background-image: url(https://www.apple.com/v/home/az/images/promos/iphone-tradein/iphone_tradein_promo__d5au3rkw5kuq_large_2x.jpg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-size: cover;
+    background-position: center;    
+}
+
+#nav1 i{
+position: absolute;
+top: 16%;
+left: 16.2%;
+color: black;
+font-size: 35px;
+ filter: opacity(92%);
+}
+
+#nav1 h1{
+    margin-top: 100px;
+    color: black;
+    font-size: 35px;
+    text-transform: uppercase;
+    font-weight: 600;
+    filter: opacity(92%);   
+}
+
+#nav1 h2{
+    
+    color: black;
+    font-size: 22px;
+    text-transform: uppercase;
+    filter: opacity(92%);   
+}
+
+#nav1 h3{
+    position: absolute;
+    top:27%;
+    display: flex;
+    gap: 20px;
+    font-weight: 800;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-family: gilroy;
+    transition: all ease 0.5s;
+}
+
+#nav1 h3 a{
+    color: royalblue;
+    text-decoration: none;    
+}
+
+#nav1 h3 a:hover{
+    scale: 1.2;
+}
+
+#page4 #nav2{
+    display: flex;
+    height: 100%;
+    width: 50%;
+    border: solid 10px;
+    border-color: lavender;
+    padding-bottom: 97px;
+    background-image: url(https://www.apple.com/v/home/az/images/promos/wwdc23-announce/promo_wwdc23__b68ptht3mro2_large_2x.jpg);
+    flex-direction: column; 
+    align-items: center;
+    justify-content: flex-end;
+    background-position: center;
+    background-size: cover;
+}
+
+#nav2 i{
+position: absolute;
+top: 70%;
+left: 65.6%;    
+color: white;
+font-size: 40px;
+}
+
+#nav2 h1{
+    position: absolute;
+    top: 70.5%;
+    color: white;
+    font-size: 40px;
+    text-transform: uppercase;   
+}
+
+#nav2 h2{
+    position: absolute;
+    top: 79%;
+    color: white;
+    font-size: 17px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+#nav2 #k{
+    position: absolute;
+    top: 82%;
+    left: 65%;
+    color: white;
+    font-size: 17px;
+    font-weight: 500;
+    text-transform: uppercase; 
+}
+
+#nav2 h4{
+    position: absolute;
+    top: 90%;   
+    display: flex;
+    gap: 20px;   
+    font-size: 25px;
+    font-weight: 500;
+    font-family: gilroy;
+    text-transform: uppercase;
+    transition: all ease 0.5s;
+}
+
+#nav2 h4 a{
+    color: royalblue;
+    text-decoration: none;    
+}
+
+#nav2 h4 a:hover{
+    scale: 1.2;
+}
+
+#page5{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    display: flex;
+    
+}
+
+#page5 #nav1{
+    height: 100%;
+    width: 50%;
+    border: solid 10px;
+    border-color: lavender;
+    background-image: url(https://www.apple.com/v/home/az/images/promos/ipad/promo_ipad__fioegapg12qi_medium.jpg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-size: cover;
+    background-position: center;    
+}
+
+#nav1 #like{
+    margin-top: 110px;
+    color: black;
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: lowercase;   
+}
+
+#nav1 #you{
+    position: absolute;
+    top: 28%;
+    color: black;
+    font-size: 20px;
+    font-family: gilroy;
+    text-transform: uppercase;   
+}
+
+#nav1 h3{
+    position: absolute;
+    top: 34%;
+    display: flex;
+    gap: 20px;
+    font-weight: 600;
+    font-size: 18px;
+    font-family: gilroy;
+    text-transform: capitalize;
+    transition: all ease 0.5s;   
+}
+
+#nav1 h3 a{
+    color: royalblue;
+    text-decoration: none;    
+}
+
+#nav1 h3 a:hover{
+    scale: 1.2;
+}
+
+#page5 #nav2{
+    display: flex;
+    height: 100%;
+    width: 50%;
+    border: solid 10px;
+    border-color: lavender;
+    background-image: url(https://www.apple.com/v/macbook-pro-14-and-16/e/images/overview/hero/hero_intro__cww8m2vra4uq_large.jpg);
+    flex-direction: column; 
+    align-items: center;
+    justify-content: flex-start;
+    background-position: center;
+    background-size: cover;
+}
+
+#nav2 #f{
+    position: absolute;
+    top: 29%;
+    color: white;
+    font-size: 17px;
+    font-weight: 700;
+    font-family: gilroy;
+    filter: opacity(95%);
+    text-transform: uppercase;
+}
+
+#nav2 h3 {
+    position: absolute;
+    top: 35%;
+    left: 69%;   
+    gap: 30px;   
+    font-weight: 500;
+    font-size: 25px;
+    font-family: gilroy;
+    text-transform: capitalize;
+    transition: all ease 0.5s;   
+}
+
+#nav2 h3 a{
+    color: royalblue;
+    text-decoration: none;    
+}
+
+#nav2 h3 a:hover{
+    scale: 1.2;
+}
+
+#page6{
+    height: 100%;
+    width: 100%; 
+    position: relative;
+    display: flex;
+}
+
+#page6 #raw1{
+    height: 100%;
+    width: 50%;
+    border: solid 10px;
+    border-color: lavender;
+    background-image: url(https://www.apple.com/in/home/promos/mothers-day-2023/images/promo__sw58lbodkmqq_small.jpg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-size: cover;
+    background-position: center;    
+}
+
+#raw1 #be{
+    margin-top: 54px;
+    color: black;
+    font-size: 43px;
+    text-transform: uppercase;
+    filter: opacity(90%);   
+}
+
+#raw1 #kind{
+    position: absolute;
+    top: 26%;
+    color: black;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;   
+}
+
+#raw1 #to{
+    position: absolute;
+    top: 38%;
+    display: flex;
+    gap: 20px;
+    font-weight: 600;
+    font-size: 20px;
+    font-family: gilroy;
+    text-transform: capitalize;
+    transition: all ease 0.5s;   
+}
+
+#raw1 #to a{
+    color: royalblue;
+    text-decoration: none;    
+}
+
+#raw1 #to a:hover{
+    scale: 1.2;
+}
+
+#page6 #raw2{
+    display: flex;
+    height: 100%;
+    width: 50%;
+    border: solid 10px;
+    border-color: lavender;
+    background-image: url(https://www.apple.com/in/home/promos/apple-watch-ultra/images/promo_apple_watch_ultra__gnsqulvdc4a6_small.jpg);
+    flex-direction: column; 
+    align-items: center;
+    justify-content: flex-start;
+    background-position: center;
+    background-size: cover;
+}
+
+#raw2 i{
+    position: absolute;
+    top: 10%;
+    left: 70%;
+    color: black;
+    font-size: 35px;
+}
+
+#raw2 #yellow{
+    position: absolute;
+    top: 10.6%;
+    left: 72.5%;
+    color: black;
+    font-size: 32px;
+    text-transform: uppercase;
+}
+
+#raw2 #orange{
+    position: absolute;
+    top: 17%;
+    left: 74%;
+    color: orangered;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-family: gilroy;
+}
+
+#raw2 #red{
+    position: absolute;
+    top: 22%;
+    left: 68%;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-weight: 10px;
+    text-transform: uppercase;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    filter: opacity(85%);
+}
+
+#raw2 h3{
+    position: absolute;
+    top: 27%;
+    left: 69%;   
+    display: flex;
+    gap: 30px;   
+    font-weight: 600;
+    font-size: 22px;
+    font-family: gilroy;
+    text-transform: capitalize;
+    transition: all ease 0.5s;   
+}
+
+#raw2 h3 a{
+    color: royalblue;
+    text-decoration: none;    
+}
+
+#raw2 h3 a:hover{
+    scale: 1.2;
+}
+
+
+#page7{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    overflow-x: auto;
+    padding: 0 50px;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+#container{
+    gap: 25px;
+    display: flex;
+    animation-name: anime;
+    animation-duration: 8s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-delay: 0.5s;
+}
+
+#page7:hover #container {
+    animation-play-state: paused;
+}
+
+#page7::-webkit-scrollbar{
+    display: none;
+}
+
+@keyframes anime {
+    0%{
+        transform: translate(0);
+    }
+    100%{
+        transform: translatex(calc(-180% - 10px));
+    }
+}
+
+#part1{
+    height: 80%;
+    width: 80%;
+    flex-shrink: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+    position: relative;
+}
+
+
+#page7 #part1 img{
+height: 100%;
+width: 100%;
+object-fit: cover;
+
+}
+
+#page7 #part1 h1{
+    position: absolute;
+    top: 20%;
+    left: 6%;
+    color: white;
+    font-size: 125px;
+    font-weight: 500;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+#page7 #part1 h2{
+    position: absolute;
+    top: 85%;
+    left: 20%;
+    text-transform: capitalize;
+    font-size: 22px;
+    color: white;
+    font-weight: 500;
+    font-family: gilroy;
+}
+
+#page7 #part1 #v1{
+    position: absolute;
+    top: 80.5%;
+    left: 92%;
+    font-size: 39px;
+    font-weight: 100;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#page7 #part1 #k{
+    position: absolute;
+    top: 83%;
+    left: 88%;
+    font-size: 38px;
+    color: white;
+}
+
+
+#page7 #part1 button{
+    position: absolute;
+    top: 84%;
+    left: 5%;
+    height: 7%;
+    width: 14%;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    text-transform: capitalize;
+    border-radius: 24px;
+    border:none;
+    color: rgba(0, 0, 0, 0.85);
+
+}
+
+#page7 #part1 >i{
+    position: absolute;
+    top: 93%;
+    left: 94%;
+    font-size: 25px;   
+}
+
+#part2{
+    height: 80%;
+    width: 80%;
+    flex-shrink: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+    position: relative;
+}
+
+
+#page7 #part2 img{
+height: 100%;
+width: 100%;
+object-fit: cover;
+}
+
+
+#page7 #part2 h1{
+    position: absolute;
+    top: 3%;
+    left: 10%;
+    color: white;
+    font-size: 120px;
+    font-weight: 500;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+#page7 #part2 h2{
+    position: absolute;
+    top: 85%;
+    left: 24%;
+    text-transform: capitalize;
+    font-size: 25px;
+    color: white;
+    font-weight: 500;
+    font-family: gilroy;
+}
+
+#page7 #part2 #v1{
+    position: absolute;
+    top: 80.5%;
+    left: 92%;
+    font-size: 39px;
+    font-weight: 100;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#page7 #part2 #k{
+    position: absolute;
+    top: 83%;
+    left: 88%;
+    font-size: 38px;
+    color: white;
+}
+
+
+#page7 #part2 button{
+    position: absolute;
+    top: 84%;
+    left: 7%;
+    height: 7%;
+    width: 14%;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    text-transform: capitalize;
+    border-radius: 24px;
+    border:none;
+    color: rgba(0, 0, 0, 0.85);
+}
+
+#page7 #part2 >i{
+    position: absolute;
+    top: 93%;
+    left: 93%;
+    font-size: 25px;
+    
+}
+
+#part3{
+    height: 80%;
+    width: 80%;
+    flex-shrink: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+    position: relative;
+}
+
+
+#page7 #part3 img{
+height: 100%;
+width: 100%;
+object-fit: cover;
+}
+
+
+#page7 #part3 h1{
+    position: absolute;
+    top: 3%;
+    left: 7%;
+    color: white;
+    font-size: 100px;
+    font-weight: 500;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+#page7 #part3 h2{
+    position: absolute;
+    top: 85%;
+    left: 24%;
+    text-transform: capitalize;
+    font-size: 25px;
+    color: white;
+    font-weight: 500;
+    font-family: gilroy;
+}
+
+#page7 #part3 #v1{
+    position: absolute;
+    top: 80.5%;
+    left: 92%;
+    font-size: 39px;
+    font-weight: 100;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#page7 #part3 #k{
+    position: absolute;
+    top: 83%;
+    left: 88%;
+    font-size: 38px;
+    color: white;
+}
+
+
+#page7 #part3 button{
+    position: absolute;
+    top: 84%;
+    left: 7%;
+    height: 7%;
+    width: 14%;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    text-transform: capitalize;
+    border-radius: 24px;
+    border:none;
+    color: rgba(0, 0, 0, 0.85);
+}
+
+#page7 #part3 >i{
+    position: absolute;
+    top: 93%;
+    left: 93%;
+    font-size: 25px;
+    
+}
+
+#page8{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.375);
+}
+
+#page8 #para{
+    font-size: 15px;
+    font-weight: 500;
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 140px;
+    color: #000000a9;
+    position: relative;
+}
+
+#para p .ad{
+    color: rgba(0, 0, 0, 0.891);
+    font-weight: 300;
+}
+
+
+#page8 #elem1 {
+    position: absolute;
+    top:26%;
+    left: 11%;
+    
+}
+
+#elem1 h4{
+    font-size: 17px;
+    font-family: gilroy;
+    text-transform: capitalize;
+    color: rgba(0, 0, 0, 0.826);
+}
+
+#elem1 h3 a{
+    font-size: 14px;
+    font-family: gilroy;
+    text-transform: lowercase;
+    color: rgba(0, 0, 0, 0.779);    
+    text-decoration: none;
+}
+
+
+#page8 #elem2 {
+    position: absolute;
+    top:26%;
+    left:30%;
+    
+}
+
+#elem2 h4{
+    font-size: 17px;
+    font-family: gilroy;
+    text-transform: capitalize;
+    color: rgba(0, 0, 0, 0.818);
+}
+
+#elem2 h3 a{
+    font-size: 14px;
+    font-family: gilroy;
+    text-transform: lowercase;
+    color: rgba(0, 0, 0, 0.744);
+    text-decoration: none;    
+}
+
+#page8 #elem3 {
+    position: absolute;
+    top:26%;
+    left:48%;
+    
+}
+
+#elem3 h4{
+    font-size: 17px;
+    font-family: gilroy;
+    text-transform: capitalize;
+    color: rgba(0, 0, 0, 0.818);
+}
+
+#elem3 h3 a{
+    font-size: 14px;
+    font-family: gilroy;
+    text-transform: lowercase;
+    color: rgba(0, 0, 0, 0.744);
+    text-decoration: none;    
+}
+
+#page8 #elem4 {
+    position: absolute;
+    top:26%;
+    left:63%;
+    
+}
+
+#elem4 h4{
+    font-size: 17px;
+    font-family: gilroy;
+    text-transform: capitalize;
+    color: rgba(0, 0, 0, 0.818);
+}
+
+#elem4 h3 a{
+    font-size: 14px;
+    font-family: gilroy;
+    text-transform: lowercase;
+    color: rgba(0, 0, 0, 0.744);
+    text-decoration: none;    
+}
+
+#page8 #elem5 {
+    position: absolute;
+    top:26%;
+    left:78%;
+    
+}
+
+#elem5 h4{
+    font-size: 17px;
+    font-family: gilroy;
+    text-transform: capitalize;
+    color: rgba(0, 0, 0, 0.818);
+}
+
+#elem5 h3 a{
+    font-size: 14px;
+    font-family: gilroy;
+    text-transform: lowercase;
+    color: rgba(0, 0, 0, 0.744);
+    text-decoration: none;    
+}
+
+
+#page8 #elem6 {
+    position: absolute;
+    top:66%;
+    left:11%;
+    
+}
+
+#elem6 h4{
+    font-size: 17px;
+    font-family: gilroy;
+    text-transform: capitalize;
+    color: rgba(0, 0, 0, 0.818);
+}
+
+#elem6 h3 a{
+    font-size: 14px;
+    font-family: gilroy;
+    text-transform: lowercase;
+    color: rgba(0, 0, 0, 0.744);
+    text-decoration: none;    
+}
+
+#page8 #elem7 {
+    position: absolute;
+    top:42%;
+    left:30%;
+    
+}
+
+#elem7 h4{
+    font-size: 17px;
+    font-family: gilroy;
+    text-transform: capitalize;
+    color: rgba(0, 0, 0, 0.818);
+}
+
+#elem7 h3 a{
+    font-size: 14px;
+    font-family: gilroy;
+    text-transform: lowercase;
+    color: rgba(0, 0, 0, 0.744);
+    text-decoration: none;    
+}
+
+#page8 #elem8 {
+    position: absolute;
+    top:42%;
+    left:63%;
+    
+}
+
+#elem8 h4{
+    font-size: 17px;
+    font-family: gilroy;
+    text-transform: capitalize;
+    color: rgba(0, 0, 0, 0.818);
+}
+
+#elem8 h3 a{
+    font-size: 14px;
+    font-family: gilroy;
+    text-transform: lowercase;
+    color: rgba(0, 0, 0, 0.744);
+    text-decoration: none;    
+}
+
+#page8 #elem9 {
+    position: absolute;
+    top:60%;
+    left:63%;
+    
+}
+
+#elem9 h4{
+    font-size: 17px;
+    font-family: gilroy;
+    text-transform: capitalize;
+    color: rgba(0, 0, 0, 0.818);
+}
+
+#elem9 h3 a{
+    font-size: 14px;
+    font-family: gilroy;
+    text-transform: lowercase;
+    color: rgba(0, 0, 0, 0.744);
+    text-decoration: none;    
+}
+
+#page8 #elem10 {
+    position: absolute;
+    top:51%;
+    left: 78%;
+    
+}
+
+#elem10 h4{
+    font-size: 17px;
+    font-family: gilroy;
+    text-transform: capitalize;
+    color: rgba(0, 0, 0, 0.818);
+}
+
+#elem10 h3 a{
+    font-size: 14px;
+    font-family: gilroy;
+    text-transform: lowercase;
+    color: rgba(0, 0, 0, 0.744);
+    text-decoration: none;    
+}
+
+#elem11 {
+    position: absolute;
+    top: 88%;
+    left: 11%;
+    font-size: 13px;
+    font-weight: 500;
+    font-family: 'Times New Roman', Times, serif;
+    color: #000000c7;
+    text-transform: capitalize;
+
+}
+
+#elem11 a{
+    color: royalblue;
+    font-weight: 300;
+}
+
+
+#page8 hr{position: absolute;
+    top: 80%;
+    width: 100%;
+    height: 2px;
+    flex-wrap: wrap;
+}
+
+#elem12 {
+    position: absolute;
+    top: 94%;
+    left: 11%;
+    font-size: 13px;
+    font-weight: 500;
+    font-family: 'Times New Roman', Times, serif;
+    color: #000000c7;
+    text-transform: capitalize;
+
+}
+
+#elem12 a{
+    color: royalblue;
+    font-weight: 300;
+}
+
+#elem13 h4{
+    position: absolute;
+    top: 94%;
+    left: 33%;
+    font-size: 15px;
+    font-weight: 200;
+    font-family: 'Times New Roman', Times, serif;
+    color: #000000c7;
+    text-transform: capitalize;
+
+}
+
+#elem13 h3{
+    position: absolute;
+    top: 94%;
+    left: 87%;
+    color: #000000c7;
+    text-transform: capitalize;
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 500;
+}

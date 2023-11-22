@@ -1,0 +1,1620 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+*::selection{
+    background-color: crimson;
+    color: #ecececbf;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+body::-webkit-scrollbar{
+    display: block;
+    width: 6px;
+    background-color: crimson;
+}
+
+body::-webkit-scrollbar-thumb{
+    background-color: #ecececbf;
+    border-radius: 50px;
+}
+
+#cursor{
+    height: 15px;
+    width: 15px;
+    background-color: crimson;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 999;
+}
+
+#cursor-blur{
+    height: 400px;
+    width: 400px;
+    background-color: rgba(220, 20, 60, 0.346);
+    border-radius: 50%;
+    position: fixed;
+    filter: blur(40px);
+    z-index: 1;
+}
+
+
+#nav{
+    height: 100px;
+    width: 100%;
+    /*background-color: red;*/
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 888;
+    position: fixed;
+    padding-right: 50px;
+}
+
+#nav img{
+    height: 150px;
+    margin-left: 40px;
+}
+
+#nav #line{
+    height: 50px;
+    width: 55%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    border-radius: 10px;
+    background-color: #ecececbf;
+}
+
+#line h4{
+    font-size: 16px;
+    font-family: gilroy;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: #000;
+    cursor: pointer;
+}
+
+#nav button {
+    height: 46px;
+    width: 14%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    gap: 10px;
+    z-index: 10;
+    background-color: #ecececbf;
+    border: none;       
+    border-radius: 50px;
+}
+
+#nav button img{
+    position: absolute;
+    top: 20%;
+    left: -19%;
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    object-fit: cover;
+    border-radius: 50px;
+    transition: all ease 0.3s;
+}
+
+#nav button img:hover{
+    scale: 1.1;
+    transform: rotate(360deg);
+}
+
+#nav button h3{
+    cursor: pointer;
+    font-size: 15px;
+    font-family: gilroy;
+    font-weight: 500;
+    padding-left: 50px;
+    text-transform: capitalize;
+    color: #000;
+    transition: all ease  0.3s;
+}
+
+#nav button h3:hover{
+    color: crimson;
+}
+
+video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: fixed;
+   /* margin-top: 120px;
+    margin-left: 70px;
+    border-radius: 50px;*/
+}
+
+#main{
+    position: relative;
+    background-color: #00000053;
+}     
+
+#page1{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    z-index: 10;
+}
+  
+  
+#page1 #nxt{
+    font-size: 160px;
+    font-weight: 800;
+    font-family: franchise;
+    position: relative;
+    text-transform: capitalize;
+    color: #ffffff8b; 
+    margin-top: 100px;
+}
+
+
+#page1 p{
+    font-size: 30px;
+    font-weight: 200;
+    margin-top: 50;
+    font-family: gilroy;
+    text-transform: capitalize;
+    color: #fff;
+}
+
+#page2{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    background-color: #000;
+} 
+
+#page2 h3{
+    position: absolute;
+    top: 5%;
+    left: 2%;
+    color: crimson;
+    font-size: 16px;
+    font-family: gilroy;
+    font-weight: 500;
+    line-height: 30px;
+}
+
+#page2 h2{
+    position: absolute;
+    top: 10%;
+    left: 2%;
+    color: crimson;
+    font-size: 16px;
+    font-family: gilroy;
+    font-weight: 500;
+}
+
+#page2 #box-img{
+    height: 70vh;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    z-index: 99;
+    position: relative;
+    border-radius: 50px;
+    background-color: rgba(220, 20, 60, 0.308);
+}
+
+
+#box-img #core{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 30px;
+    z-index: 99;
+}
+
+
+#core h2{
+    color: #fff;
+    font-size: 50px;
+    font-family: gilroy;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+#core p{
+    color: #fff;
+    font-size: 18px;
+    font-family: gilroy;
+    font-weight: 500;
+    padding-top: 220px;
+    text-transform: capitalize;
+}
+
+#core h4{
+    color: crimson;
+    font-size: 20px;
+    font-family: gilroy;
+    font-weight: 600;
+    padding-top: 0px;
+    text-transform: uppercase;
+}
+
+#box-img #mask{
+    height: 400px;
+    width: 500px;
+    object-fit: cover;
+    padding-bottom: 42px;
+    filter: drop-shadow(2px 5px 5px #000);
+}
+
+#page3{
+    height: 140vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    position: relative;
+   background-color: #000;
+}
+
+#alive{
+    height: 100%;
+    width: 50%;
+    position: relative;
+
+}
+
+#alive video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 10;
+    transform: translate(-50%,-50%);
+}
+
+#page3 #heart{
+    height: 100%;
+    width: 50%;
+    position: relative;   
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    z-index: 10;
+    align-items: center;    
+    justify-content: center;
+}
+
+#heart h1{
+    font-size: 25px;
+    font-family: gilroy;
+    font-weight: 100px;
+    margin-top: 10px;
+    text-transform: uppercase;
+    color: crimson;
+    text-align: center;
+    z-index: 2;
+}
+
+#heart #imp{
+    font-size: 35px;
+    font-family: gilroy;
+    font-weight: 900;
+    text-transform: capitalize;
+    color: crimson;
+    z-index: 2;
+}
+
+#heart .rip1{
+    font-size: 27px;
+    font-family: gilroy;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: #fff;
+    z-index: 2;
+}
+
+#page4{
+    height: 120vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    background-color: #000;   
+}
+
+#page4 #existence{
+    height: 120vh;
+    width: 55%;
+    display: flex;
+    position: relative;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#page4 #loveable{
+    height: 120vh;
+    width: 45%;
+    display: flex;
+    position: relative;
+    cursor: pointer;
+    justify-content: space-evenly;
+    flex-direction: column;   
+}
+
+#existence h1{
+    font-size: 50px;
+    font-family: fantasy;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: crimson;
+    text-align: center;
+    padding-right: 10px;
+    z-index: 10;
+    margin-top: 10px;
+}
+
+#existence h4{
+    font-size: 19px;
+    font-family: gilroy;
+    font-weight: 500;
+    text-transform: capitalize;
+    padding-left: 20px;
+    color: #fff;
+    z-index: 9;
+    
+}
+
+#existence img{
+    height: 320px;
+    width: 320px;
+    object-fit: cover;
+    z-index: 10;
+    filter: drop-shadow(2px 5px 5px crimson);
+}
+
+#loveable .vx{
+    font-size: 30px;
+    font-family: gilroy;
+    font-weight: 500;
+    position: relative;
+    letter-spacing: 0.5;
+    text-decoration: none;
+    margin-left: 100px;
+    text-transform: capitalize;
+    color: #fff;
+    z-index: 10;
+    border-bottom: 2px solid white;
+}
+
+.vx:hover{
+    color: crimson;
+}
+
+.vx:after{
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    left: 50%;
+    transform: translate(-50%,0);
+    width: 0;
+    height: 5px;
+    background: linear-gradient(to right,#830081,blue,crimson,maroon);
+    transition: 0.2s;
+}
+
+.vx:hover:after{
+    width: 100%;
+    
+}
+
+#page5{
+    height: 130vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    flex-direction: column;
+    background-color: #000;    
+}
+
+#page5 h1{
+    font-size: 45px;
+    font-family: gilroy;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: crimson;
+    margin-top: 60px;
+    text-align: center;
+}
+
+#page5 #contain{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+#contain .box{
+    cursor: pointer;
+
+}
+
+
+#contain #box1{
+    height: 92%;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    gap: 10px;
+    margin-top: 40px;
+    z-index: 10;
+    border-radius: 40px;
+    background-color: rgba(220, 20, 60, 0.483);
+}
+
+#box1 h3{
+    position: absolute;
+    top: 6%;
+    font-size: 25px;
+    font-family: gilroy;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: #fff;
+}
+
+#box1 img{
+    height: 300px;
+    width: 220px;
+    object-fit: cover;
+    filter: drop-shadow(2px 5px 12px #000);
+}
+
+#box1 h2{
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-family: gilroy;
+    font-weight: 500;
+    color: #fff;
+    text-transform: capitalize;
+}
+
+#box1 p{
+    font-size: 15px;
+    font-family: gilroy;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: #fff;
+    margin-bottom: 20px;
+    letter-spacing: 0.5px;
+}
+
+#contain #box2{
+    height: 92%;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    gap: 10px;
+    margin-top: 40px;
+    z-index: 10;
+    border-radius: 40px;
+    background-color: rgba(220, 20, 60, 0.483);
+}
+
+#box2 h3{
+    position: absolute;
+    top: 6%;
+    font-size: 25px;
+    font-family: gilroy;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: #fff;
+}
+
+#box2 img{
+    position: absolute;
+    top: 7%;
+    height: 300px;
+    width: 235px;
+    object-fit: cover;
+    filter: drop-shadow(2px 5px 12px #000);
+}
+
+#box2 h2{
+    position: absolute;
+    top: 65%;
+    font-size: 27px;
+    font-family: gilroy;
+    font-weight: 500;
+    color: #fff;
+    text-transform: capitalize;
+}
+
+#box2 p{
+    position: absolute;
+    top: 77%;
+    font-size: 13px;
+    font-family: gilroy;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: #fff;
+    margin-bottom: 20px;
+    letter-spacing: 0.5px;
+}
+
+#contain #box3{
+    height: 92%;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    gap: 10px;
+    margin-top: 40px;
+    z-index: 10;
+    border-radius: 40px;
+    background-color: rgba(220, 20, 60, 0.483);
+}
+
+#box3 h3{
+    position: absolute;
+    top: 6%;
+    font-size: 25px;
+    font-family: gilroy;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: #fff;
+}
+
+#box3 img{
+    position: absolute;
+    top: 7%;
+    height: 300px;
+    width: 235px;
+    object-fit: cover;
+    filter: drop-shadow(2px 5px 12px #000);
+}
+
+#box3 h2{
+    position: absolute;
+    top: 65%;
+    font-size: 27px;
+    font-family: gilroy;
+    font-weight: 500;
+    color: #fff;
+    text-transform: capitalize;
+}
+
+#box3 p{
+    position: absolute;
+    top: 77%;
+    font-size: 13px;
+    font-family: gilroy;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: #fff;
+    margin-bottom: 20px;
+    letter-spacing: 0.5px;
+}
+
+#page6{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+#page6 #vilen{
+    height: 70vh;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 50px;
+    overflow: hidden;
+    z-index: 10;
+    margin-left: 30px;
+}
+
+#vilen img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50px;
+    transition: all ease 0.5s;
+}
+
+#vilen img:hover{
+    scale: 1.1;
+}
+
+#vilen h2{
+    position: absolute;
+    top: 30%;
+    text-align: center;
+    font-size: 35px;
+    font-family: gilroy;
+    font-weight: 800;
+    color: #fff;
+    text-transform: capitalize;
+}
+
+#vilen p{
+    position: absolute;
+    top: 60%;
+    text-align: center;
+    font-size: 20px;
+    font-family: gilroy;
+    font-weight: 400;
+    color: #fff;
+}
+
+#tab2 {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    margin-right: 80px;
+    position: relative;
+    z-index: 10;
+}
+
+#tab2 #div1{
+    height: 100px;
+    width: 300px;
+    background-color: transparent;
+    padding-top: 30px;
+    text-align: center;
+    font-size: 20px;
+    font-family: gilroy;
+    font-weight: 800;
+    text-transform: capitalize;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: all ease 0.3s;
+}
+
+#tab2 #div1:hover{
+    background-color: rgba(220, 20, 60, 0.645);
+    border: 2px solid white;
+    font-size: 17px;
+}
+
+#tab2 #div2{
+    height: 100px;
+    width: 300px;
+    background-color: transparent;
+    padding-top: 30px;
+    text-align: center;
+    font-size: 20px;
+    font-family: gilroy;
+    font-weight: 800;
+    text-transform: capitalize;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: all ease 0.3s;
+}
+
+#tab2 #div2:hover{
+    background-color: rgba(220, 20, 60, 0.645);
+    border: 2px solid white;
+    font-size: 17px;
+}
+
+
+#nav-2{
+    height: 70vh;
+    width: 100%;
+    position: relative;
+    background-color: #000;
+    align-items: center;
+} 
+
+#nav-2 h1{
+    margin-left: 500px;
+    font-size: 35px;
+    font-family: gilroy;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: crimson;
+    z-index: 10;
+}
+
+#nav-2 p{
+    font-size: 25px;
+    font-family: gilroy;
+    font-weight: 400;
+    margin-top: 30px;
+    text-transform: capitalize;
+    color: #fff;
+    text-align: center;
+    z-index: 10;
+}
+
+
+#dazanum{
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    position: relative; 
+    z-index: 10;
+    margin-top: 90px;
+    cursor: pointer;
+}
+
+#day2{
+    
+    display: inline-block;
+    white-space: nowrap;
+    animation-name: moon;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+#dazanum::-webkit-scrollbar{
+    display: none;
+}
+
+#day2 img{
+    display: inline-block;
+    height: 150px;
+    width: 150px;  
+    object-fit: contain;
+    margin-right: 40px;
+    transform: rotate3d(-1,-1,0,20deg);
+    transition: all linear 0.3s;
+}
+
+#day2 img:hover{
+    scale: 1.1;
+}
+
+@keyframes moon{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+
+#page7{
+    height: 120vh;
+    width: 100%;
+    background-color: #000;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#page7 img{
+    height: 95%;
+    width: 55%;
+    object-fit: cover;
+    padding-left: 80px;
+    object-position: center;   
+}
+
+#page7 #cold{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#cold #batman{
+   position: absolute;
+   left: 2%;
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   gap: 40px;
+   z-index: 10;
+}
+
+#batman h2{
+   font-size: 55px;
+   font-family: gilroy;
+   color: #fff;
+   font-weight: 700;
+   text-transform: capitalize;
+}
+
+#batman p{
+    font-size: 20px;
+    font-family: gilroy;
+    color: #fff;
+    font-weight: 400;
+    text-transform: capitalize;
+ }
+
+#batman button{
+    height: 60px;
+    width: 200px;
+    background-color: #fff;
+    z-index: 10;
+    border: 3px solid #000;
+    border-radius: 50px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+button #bold{
+  height: 0px;
+  width: 0px;
+  background: linear-gradient(to left bottom,#92557f,#92041e);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  border-radius: 50%;
+  transition: ease 0.4s;
+}
+
+button:hover #bold{
+    height: 90px;
+    width: 290px;
+  }
+  
+
+button h3{
+    color: #000;
+    font-size: 20px;
+    font-family: gilroy;
+    font-weight: 600;
+    z-index: 99;
+    text-transform: capitalize;
+    transition: all ease 0.4s;
+    position: relative;
+}
+
+button:hover h3{
+    color: #fff;
+    font-family: gilroy;
+    font-weight: 600;
+}
+
+
+#cold #hanu{
+    position: absolute;
+    left: 60%;
+    gap: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 10;
+}
+
+#hanu .uni{
+    font-size: 20px;
+    font-family: gilroy;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: #fff;
+}
+
+#cold #mymoon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#mymoon #graph1{
+    position: absolute;
+    top: 16%;
+    left: 82%;
+}
+
+#graph1 h3{
+    font-size: 20px;
+    font-family: gilroy;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: #fff;
+}
+
+#graph1 p{
+    font-size: 15px;
+    font-family: gilroy;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: #fff;
+}
+
+#mymoon #graph2{
+    position: absolute;
+    top: 37%;
+    left: 82%;
+}
+
+#graph2 h3{
+    font-size: 20px;
+    font-family: gilroy;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: #fff;
+}
+
+#graph2 p{
+    font-size: 15px;
+    font-family: gilroy;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: #fff;
+}
+
+#mymoon #graph3{
+    position: absolute;
+    top: 58%;
+    left: 82%;
+}
+
+#graph3 h3{
+    font-size: 20px;
+    font-family: gilroy;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: #fff;
+}
+
+#graph3 p{
+    font-size: 15px;
+    font-family: gilroy;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: #fff;
+}
+
+#mymoon #graph4{
+    position: absolute;
+    top: 79%;
+    left: 82%;
+}
+
+#graph4 h3{
+    font-size: 20px;
+    font-family: gilroy;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: #fff;
+}
+
+#graph4 p{
+    font-size: 15px;
+    font-family: gilroy;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: #fff;
+}
+
+
+#page8{
+    height: 110vh;
+    width: 100%;
+    position: relative;
+    background-color: #000;
+}
+
+#page8 h1{
+    font-size: 123px;
+    position: absolute;
+    font-weight: 900;
+    top: 3%;
+    color: crimson;
+    filter: drop-shadow(1px 1px 5px crimson);
+    font-family: gilroy;
+    -webkit-text-stroke: 1px #ffff;
+}
+
+#page8 #tab-2{
+    height: 90vh;
+    width: 100%;
+    gap: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    z-index: 10;
+    transform: translate(-50%,-50%);
+}
+
+#tab-2 #box-1{
+    height: 90vh;
+    width: 50%;
+    position: relative;
+    border-radius: 20px;
+    background-color: rgba(99, 4, 23, 0.724);
+    justify-content: space-evenly;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    z-index: 10;
+
+}
+
+#box-1 h3{
+    font-size: 35px;
+    font-family: gilroy;
+    font-weight: 800;
+    text-transform: capitalize;
+    color: crimson;
+}
+
+#box-1 .black{
+    font-size: 19px;
+    font-family: gilroy;
+    font-weight: 500;
+    margin-bottom: 20px;
+    color: #fff;
+    text-transform: capitalize;
+}
+
+#tab-2 #box-2{
+    height: 90vh;
+    width: 50%;
+    position: relative;
+    border-radius: 20px;
+    background-color: rgba(99, 4, 23, 0.724);
+    justify-content: space-evenly;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    z-index: 10;
+}
+
+
+#box-2 h3{
+    font-size: 35px;
+    font-family: gilroy;
+    font-weight: 800;
+    text-transform: capitalize;
+    color: crimson;
+    margin-top: 10px;
+}
+
+#box-2 .black{
+    font-size: 17px;
+    font-family: gilroy;
+    font-weight: 500;
+    color: #fff;
+    text-transform: capitalize;
+}
+
+#box-2 button{
+    height: 40px;
+    width: 250px;
+    margin-right: 280px;
+    background-color: #fff;
+    z-index: 10;
+    border: 3px solid #000;
+    border-radius: 50px;
+    position: absolute;
+    left: 25%;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+button #find{
+  height: 0px;
+  width: 0px;
+  background: linear-gradient(to left bottom,#92557f,#92041e);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  border-radius: 50%;
+  transition: ease 0.3s;
+}
+
+button:hover #find{
+    height: 70px;
+    width: 270px;
+  }
+  
+
+button h2{
+    color: #000;
+    font-size: 20px;
+    font-family: gilroy;
+    font-weight: 600;
+    z-index: 99;
+    text-transform: capitalize;
+    transition: all ease 0.4s;
+    position: relative;
+}
+
+button:hover h2{
+    color: #fff;
+    font-family: gilroy;
+    font-weight: 600;
+}
+
+#page9{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #000;
+    height: 70vh;
+    width: 100%;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+#page9 h1{
+    font-size: 60px;
+    font-family: fantasy;
+    color: crimson;
+    font-weight: 100;
+    z-index: 10;
+}
+
+#page9 h5{
+    font-size: 17px;
+    font-family: gilroy;
+    color: #fff;
+    font-weight: 500;
+    z-index: 10;
+    text-transform: capitalize;
+}
+
+#page9 p{
+    font-size: 20px;
+    font-family: gilroy;
+    color: #fff;
+    z-index: 10;
+    letter-spacing: 0.6;
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+
+#page9 button{
+    height: 50px;
+    width: 150px;
+    background-color: #fff;
+    z-index: 10;
+    border: 3px solid #000;
+    border-radius: 50px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+button #btn{
+  height: 0px;
+  width: 0px;
+  background: linear-gradient(to left bottom,#92557f,#92041e);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  border-radius: 50%;
+  transition: ease 0.3s;
+}
+
+button:hover #btn{
+    height: 70px;
+    width: 270px;
+  }
+  
+
+button h4{
+    color: #000;
+    font-size: 17px;
+    font-family: gilroy;
+    font-weight: 600;
+    z-index: 99;
+    text-transform: capitalize;
+    transition: all ease 0.4s;
+    position: relative;
+}
+
+button:hover h4{
+    color: #fff;
+    font-family: gilroy;
+    font-weight: 600;
+}
+
+#page10{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+}
+
+#page10 #radius{
+    height: 70vh;
+    width: 90%;
+    display: flex;
+    z-index: 10;
+    border-radius: 150px 20px;
+    position: relative;
+    filter: drop-shadow(2px 5px 5px crimson);
+    background: linear-gradient(to left bottom,#867f7f,#a00824);
+}
+
+#radius #comb-1{
+  display: flex;
+  position: absolute;
+  top:10%;
+  left: 5%;
+  flex-direction: column;
+}
+
+#comb-1 h1{
+    font-size: 45px;
+    font-family: gilroy;
+    font-weight: 500;
+    color: #fff;
+    text-transform: capitalize;
+}
+
+#comb-1 h2{
+    font-size: 20px;
+    font-family: gilroy;
+    font-weight: 500;
+    color: #000;
+    text-transform: capitalize;
+}
+
+#radius #comb-2{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    position: absolute;
+    top: 220%;
+    justify-content: space-between;
+}
+
+#comb-2 h3{
+    margin-right: 140px;
+    font-size: 35px;
+    font-family: gilroy;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: #fff;
+}
+
+#comb-2 #icon{
+    font-size: 35px;
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+#icon i{
+    color: #000;
+}
+
+#icon i:hover{
+    scale: 1.2;
+    color: #fff;
+}
+
+#radius #venom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    left: 73%;
+    top: 10%;
+    gap: 20px;
+    transition: all ease 0.4s;
+}
+
+#venom .em-1{
+    font-size: 20px;
+    font-family: gilroy;
+    font-weight: 500;
+    color: #000;
+    text-transform: capitalize;
+    letter-spacing: 0.5;
+    transition: all ease 0.2s;
+}
+
+#venom .em{
+    font: 25px;
+    color: #fff;
+    font-family: gilroy;
+}
+
+#venom .em-1:hover{
+    scale: 1.2;
+    color: #fff;
+}
+
+#radius img{
+    height: 300px;
+    width: 400px;
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+    left: 30%;
+    filter: drop-shadow(5px 5px 10px #000000);
+    top: 10%;
+}
+  
+#down-part{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    background-color: #000;
+}
+
+#down-part .let{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    z-index: 10;
+    font-size: 17px;
+    font-family: gilroy;
+    font-weight: 500;
+    color: crimson;
+    text-transform: capitalize;
+}
+
+#down-part #min{
+    position: absolute;
+    top: 35%;
+}
+
+#down-part #content{
+    position: absolute;
+    top: 23%;
+    left: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 22;
+    gap: 30px;
+}
+
+#content h1{
+    font-size: 18px;
+    font-family: gilroy;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: #fff;
+    cursor: pointer;
+}
+
+#content .dif{
+    position: relative;
+    letter-spacing: 0.5;
+    text-decoration: none;
+    transition: all ease 0.3s;
+}
+
+.dif:hover{
+    scale: 1.1;
+}
+
+.dif:after{
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    left: 50%;
+    transform: translate(-50%,0);
+    width: 0;
+    height: 1px;
+    background: linear-gradient(to right,#830081,blue,#fff,crimson,maroon);
+    transition: 0.2s;
+}
+
+.dif:hover:after{
+    width: 100%;
+    
+}
+
+#down-part #mono{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    cursor: pointer;
+    z-index: 10;
+    position: relative;
+    position: absolute;
+    top: 5%;
+    left: 53%;
+}
+
+#mono h2{
+    font-size: 30px;
+    font-family: gilroy;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: crimson;
+}
+
+#mono h1{
+    font-size: 18px;
+    font-family: gilroy;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: #fff;
+}
+
+#mono .wir{
+    position: relative;
+    letter-spacing: 0.5;
+    text-decoration: none;
+    z-index: 10;
+    transition: all ease 0.3s;
+}
+
+.wir:hover{
+    scale: 1.1;
+}
+
+.wir:after{
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    left: 50%;
+    transform: translate(-50%,0);
+    width: 0;
+    height: 1px;
+    background: linear-gradient(to right,#830081,blue,#fff,crimson,maroon);
+    transition: 0.2s;
+}
+
+.wir:hover:after{
+    width: 100%;
+    
+}
+
+#down-part #homo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    cursor: pointer;
+    z-index: 10;
+    position: relative;
+    position: absolute;
+    top: 5%;
+    left: 78%;
+}
+
+
+#homo h2{
+    font-size: 30px;
+    font-family: gilroy;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: crimson;
+}
+
+#homo h1{
+    font-size: 18px;
+    font-family: gilroy;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: #fff;
+}
+
+#homo .obt{
+    position: relative;
+    letter-spacing: 0.5;
+    text-decoration: none;
+    z-index: 10;
+    transition: all ease 0.3s;
+}
+
+.obt:hover{
+    scale: 1.1;
+}
+
+.obt:after{
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    left: 50%;
+    transform: translate(-50%,0);
+    width: 0;
+    height: 1px;
+    background: linear-gradient(to right,#830081,blue,#fff,crimson,maroon);
+    transition: 0.2s;
+}
+
+.obt:hover:after{
+    width: 100%;
+    
+}
+
+#down-part #antory{
+    position: absolute;
+    top: 20%;
+    left: 0%;   
+    height: 80%;
+    width: 50%;
+    object-fit: cover;
+    object-fit: contain;
+    z-index: 10;
+}
+
+#down-part h3{
+    position: absolute;
+    top: 90%;
+    left: 75%;
+    color: #a00824;
+    font-family: gilroy;
+    font-weight: 400;
+    font-size: 18px;
+    z-index: 10;
+    text-transform: capitalize;
+}
+
+#down-part h3 span{
+    color: #fff;
+    font-size: 18px;
+    z-index: 10;
+    font-family: gilroy;
+    font-weight: 300;
+    text-transform: capitalize;
+}

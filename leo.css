@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+#main{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#main h1{
+    font-size: 70px;
+    font-family: gilroy;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: #ffff;
+    cursor: pointer;
+}
+
+#main #cursor{
+    height: 40px;
+    width: 40px;
+    background-color: #ffff;
+    border-radius: 50px;
+    mix-blend-mode: difference;
+    position: absolute;
+    cursor: pointer;
+    z-index: 99;
+}
+
+#main button{
+    height: 40px;
+    width: 115px;
+    background-color: #445111;
+    font-size: 18px;
+    font-family: gilroy;
+    font-weight: 500;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    color: #ffff;
+    letter-spacing: 0.5px;
+    transition: all ease 0.3s;
+}
+
+#main button:hover{
+    scale: 1.1;
+    border: 2px solid rgb(1, 128, 1);
+}
+
+#main #leo{
+    margin-top: 40px;
+    height: 6px;
+    width: 250px;
+    background-color: #928585;
+    border-radius: 50px;
+    position: relative;
+}
+
+#leo #facet{
+    height: 6px;
+    width: 0px;
+    border-radius: 50px;
+    background-color: #445111;
+}

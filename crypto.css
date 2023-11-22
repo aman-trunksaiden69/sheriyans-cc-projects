@@ -1,0 +1,823 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    background-color: #000512;
+    overflow-x: hidden;
+}
+
+*::selection{
+    background-color: #BCF3FF;
+    color: #000512;
+}
+
+
+body::-webkit-scrollbar{
+    display: block;
+    width: 6px;
+    background-color: #000512;
+}
+
+body::-webkit-scrollbar-thumb{
+    background: linear-gradient(rgb(102, 179, 197), rgb(130, 93, 167) 47.52%, rgb(187, 101, 113));
+    
+}
+
+
+
+#nav{
+    height: 20vh;
+    width: 100vw;
+    background-color: #000512;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#nav #nav1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5px;
+    margin-left: 60px;
+    gap: 40px;
+}
+
+#nav1 #dot1{
+    object-fit: cover;
+    
+}
+
+#nav1 .var{
+    font-size: 14px;
+    font-family: gilroy;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #bcf3ffcc;
+    font-weight: 500;
+    position: relative;
+    letter-spacing: 0.5px;
+}
+
+.var:hover{
+    color: #ffffff;
+}
+
+.var:after{
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    left: 50%;
+    transform: translate(-50%,0);
+    width: 0;
+    height: 1px;
+    background: linear-gradient(rgb(102, 179, 197), rgb(130, 93, 167) 47.52%, rgb(187, 101, 113));
+    transition: 0.2s;
+}
+
+.var:hover:after{
+    width: 100%;
+    
+}
+
+#nav button{
+    height: 50px;
+    width: 140px;
+    background-color: transparent;
+    z-index: 10;
+    border: 2px solid #BCF3FF;
+    cursor: pointer;
+    margin-right: 130px;
+    position: relative;
+    overflow: hidden;
+}
+
+button #bold{
+  height: 0px;
+  width: 0px;
+  background-color: #BCF3FF;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  border-radius: 150px;
+  transition: ease 0.4s;
+}
+
+button:hover #bold{
+    height: 60px;
+    width: 160px;
+  }
+  
+
+button h3{
+    color: #BCF3FF;
+    font-size: 13px;
+    font-family: gilroy;
+    font-weight: 600;
+    z-index: 99;
+    text-transform: capitalize;
+    transition: all ease 0.4s;
+    position: relative;
+}
+
+button:hover h3{
+    color: #000;
+    font-family: gilroy;
+    font-weight: 600;
+}
+
+#page1{
+    height: 120vh;
+    width: 100vw;
+    position: relative;
+    background-color: #000512;
+}
+
+#page1 #dot2{
+    object-fit: contain;
+    height: 130px;
+    margin-top: 10px;
+    margin-left: 40px;
+    width: 120px;
+    z-index: 999;
+    animation-name: kill;
+    animation-timing-function: linear;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    filter: drop-shadow(2px 2px 40px rgba(220, 20, 60, 0.829));
+}
+
+@keyframes kill {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+
+#page1 #card1{
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 49%;
+    transform: translate(-50%,-50%);
+    height: 55vh;
+    width: 90vw;
+}
+
+#card1 #part-1{
+    height: 100vh;
+    width: 50%;
+    z-index: 222;
+    background-color: transparent;
+}
+
+
+#part-1 h1{
+    padding-left: 90px;
+    font-size: 160px;
+    font-family: 'Bebas Neue Pro',sans-serif;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+
+#part-1 h2{
+    padding-left: 100px;
+    line-height: 55px;
+    font-size: 125px;
+    font-family: 'Bebas Neue Pro',sans-serif;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+
+#part-2 #dot3{
+    height: 170%;
+    width: 90%;
+    position: absolute;
+    bottom: -40%;
+    right: -40%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+
+#part-2 p{
+    position: absolute;
+    top: 70%;
+    left: 56%;
+    font-family: 'Bebas Neue Pro',sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    color: #ffffff;
+    z-index: 99;
+    text-transform: capitalize;
+}
+
+#nav2{
+    height: 40vh;
+    position: relative;
+    width: 100vw;
+    display: flex;
+    background: linear-gradient(to left bottom,rgb(102, 179, 197), rgb(130, 93, 167) 47.52%, rgb(187, 101, 113));
+}
+
+#nav2 #part-1{
+    height: 100%;
+    width: 50%;
+}
+
+#part-1 h3{
+    padding-top: 50px;
+    padding-left: 50px;
+    font-family: 'Source Sans Pro',sans-serif;
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: 500;
+    color: #ffffffcc;
+}
+
+#part-1 #pot{
+    position: absolute;
+    top: 48%;
+    left: 4%;
+    font-family: gilroy;
+    font-weight: 700;
+    font-size: 25px;
+    text-transform: capitalize;
+    color: #ffffffcc;
+}
+
+#nav2 #part-2{
+    padding-bottom: 30px;
+    position: relative;
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#part-2 #per1{
+    font-size: 75px;
+    font-family: gilroy;
+    font-weight: 500;
+    color: #ffffffcc;
+}
+
+#part-2 #kat1{
+    position: absolute;
+    top: 76%;
+    left: 23%;
+    font-size: 13px;
+    font-family: gilroy;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #ffffffcc;
+    transition: all ease 0.3s;
+}
+
+#part-2 #kat1:hover{
+    scale: 1.1;
+    color: #000;
+    cursor: pointer;
+}
+
+
+#part-2 #per2{
+    font-size: 75px;
+    font-family: gilroy;
+    font-weight: 500;
+    color: #ffffffcc;
+}
+
+#part-2 #kat2{
+    position: absolute;
+    top: 76%;
+    left: 61%;
+    font-size: 13px;
+    font-family: gilroy;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #ffffffcc;
+    transition: all ease 0.3s;
+}
+
+#part-2 #kat2:hover{
+    scale: 1.1;
+    color: #000;
+    cursor: pointer;
+}
+
+#page2{
+    height: 150vh;
+    width: 100vw;
+    position: relative;
+    background-color: #000512;
+}
+
+#page2 #center{
+    height: 100%;
+    width: 50%;
+}
+
+
+#page2 #lava1{
+    position: absolute;
+    top: 15%;
+    height: 150px;
+    width: 150px;
+    left: 10%;
+    overflow: hidden;
+    filter: drop-shadow(5px 5px 40px rgba(220, 20, 60, 0.505));
+}
+
+#lava1 #miss{
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    transition: all ease 0.3s;
+}
+
+#lava1 #miss:hover{
+    scale: 1.2;
+    cursor: pointer;
+}
+
+#page2 h5{
+    position: absolute;
+    top: 37%;
+    left: 10%;
+    font-size: 15px;
+    font-family: gilroy;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+#page2 #lava2{
+     position: absolute;
+     top: 15%;
+     left: 35%;
+     height: 350px;
+     width: 600px;
+     overflow: hidden;
+}
+
+#lava2 #you{
+  height: 350px;
+  width: 600px;
+  filter: opacity(70%);
+  object-fit: cover; 
+  transition: all ease 0.4s;
+}
+
+#lava2 #you:hover{
+    scale: 1.2;
+    cursor: pointer;
+    filter: opacity(100%);
+}
+
+#lava2 h4{
+    position: absolute;
+    top: 94%;
+    left: 0%;
+    color: #ffffff;
+    font-size: 13px;
+    font-family: gilroy;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+#page2 p{
+    position: absolute;
+    top: 62%;
+    left: 45%;
+    color: #ffffff;
+    font-size: 25px;
+    font-family: 'Source Sans Pro',sans-serif;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+#page3 {
+    height: 140vh;
+    width: 100vw;
+    background-color: #000512;
+    position: relative;
+}
+
+#page3 #center2{
+    position: relative;
+    height: 80%;
+    width: 100%;
+}
+
+#center2 #so{
+    height:90%;
+    width: 80%;
+    margin-left: 110px;
+    object-fit: cover;
+}
+
+#center2 #much{
+    position: absolute;
+    top: 20%;
+    left: 35%;
+    z-index: 99;
+    /*transform: translate(-50%,-50%);*/
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+}
+
+#center2 #its{
+    position: absolute;
+    top: 85%;
+    left: 6%;
+    color: #ffffff;
+    font-family: gilroy;
+    cursor: pointer;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 500;
+    transition: all ease 0.3s;
+}
+
+#center2 #its:hover{
+    scale: 1.1;
+    color: #000;
+}
+
+#center2 #over{
+    position: absolute;
+    top: 85%;
+    left: 86%;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: gilroy;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 500;
+    transition: all ease 0.3s;
+}
+
+#center2 #over:hover{
+    scale: 1.1;
+    color: #000;
+}
+
+#center2 h3{
+    position: absolute;
+    top: 98%;
+    left: 33%;
+    color: #ffffff;
+    font-size: 22px;
+    font-family: 'Source Sans Pro',sans-serif;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+#nav3{
+    padding-top: 40px;
+    padding-left: 40px;
+    height: 50vh;
+    width: 100vw;
+    border-top: 1px solid #ffffff;
+    background-color: #000512;
+    position: relative;
+    flex-direction: column;
+}
+
+#nav3 p{
+    padding-top: 20px;
+    color: #ffffff;
+    font-size: 15px;
+    font-family: gilroy;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+#nav3 #mercy{
+    margin-top: 30px;
+    height: 30px;
+    width: 30px;
+    z-index: 9;
+    object-fit: cover;
+}
+
+#nav3 h6{
+    position: absolute;
+    top: 70%;
+    left: 7%;
+    color: #ffffff;
+    font-size: 12px;
+    font-family: gilroy;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+#nav3 #iknow{
+    position: absolute;
+    top: 10%;
+    left: 35%;
+    display: flex;
+    gap: 250px;
+}
+
+#iknow #ican{
+    color: #ffffff;
+    font-size: 20px;
+    font-family: 'Source Sans Pro',sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+#iknow #treat{
+    color: #ffffff;
+    font-size: 20px;
+    font-family: 'Source Sans Pro',sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+
+#nav3 #youbetter{
+    position: absolute;
+    top: 32%;
+    left: 35%;
+    display: flex;
+    gap: 60px;
+    cursor: pointer;
+}
+
+#youbetter #morethan{
+    color: #ffffff;
+    font-size: 16px;
+    font-family: gilroy;
+    font-weight: 500;
+    text-transform: capitalize;
+    text-decoration: none;
+    transition: all ease 0.2s;
+}
+
+#morethan:hover{
+    scale: 1.1;
+    color: #fff;
+    transform: translateY(-5%);
+}
+
+#youbetter #hecan{
+    color: #ffffff;
+    font-size: 16px;
+    font-family: gilroy;
+    font-weight: 500;
+    text-transform: capitalize;
+    transition: all ease 0.2s;
+}
+
+#hecan:hover{
+    scale: 1.1;
+    color: #BCF3FF;
+    transform: translateY(-5%);
+}
+
+
+#nav3 #wasted{
+    position: absolute;
+    top: 47%;
+    left: 35%;
+    display: flex;
+    gap: 70px;
+    cursor: pointer;
+}
+
+#wasted #crying{
+    color: #ffffff;
+    font-size: 16px;
+    font-family: gilroy;
+    font-weight: 500;
+    text-transform: capitalize;
+    transition: all ease 0.2s;
+}
+
+#crying:hover{
+    scale: 1.1;
+    color: #ffffff;
+    transform: translateY(-5%);
+}
+
+
+#wasted #bewithme{
+    color: #ffffff;
+    font-size: 16px;
+    font-family: gilroy;
+    font-weight: 500;
+    text-transform: capitalize;
+    transition: all ease 0.2s;
+}
+
+#bewithme:hover{
+    scale: 1.1;
+    color: #ffffff;
+    transform: translateY(-5%);
+}
+
+
+#nav3 #instead{
+    position: absolute;
+    top: 31%;
+    left: 63%;
+    display: flex;
+    gap: 70px;
+    cursor: pointer;
+}
+
+#instead #inthis{
+    color: #ffffff;
+    font-size: 16px;
+    font-family: gilroy;
+    font-weight: 500;
+    text-transform: capitalize;
+    transition: all ease 0.2s;
+}
+
+#inthis:hover{
+    scale: 1.1;
+    color: #ffffff;
+    transform: translateY(-5%);
+}
+
+
+#instead #wrongsituation{
+    color: #ffffff;
+    font-size: 16px;
+    font-family: gilroy;
+    font-weight: 500;
+    text-transform: capitalize;
+    transition: all ease 0.2s;
+}
+
+#wrongsituation:hover{
+    scale: 1.1;
+    color: #ffffff;
+    transform: translateY(-5%);
+}
+
+
+#nav3 #hesjust{
+    position: absolute;
+    top: 47%;
+    left: 63%;
+    display: flex;
+    gap: 70px;
+    cursor: pointer;
+}
+
+#hesjust #notright{
+    color: #ffffff;
+    font-size: 16px;
+    font-family: gilroy;
+    font-weight: 500;
+    text-transform: capitalize;
+    transition: all ease 0.2s;
+}
+
+#notright:hover{
+    scale: 1.1;
+    color: #ffffff;
+    transform: translateY(-5%);
+}
+
+
+#hesjust #foryou{
+    color: #ffffff;
+    font-size: 16px;
+    font-family: gilroy;
+    font-weight: 500;
+    text-transform: capitalize;
+    transition: all ease 0.2s;
+}
+
+#foryou:hover{
+    scale: 1.1;
+    color: #ffffff;
+    transform: translateY(-5%);
+}
+
+
+#nav3 #badfor{
+    position: absolute;
+    top: 70%;
+    left: 35%;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    cursor: pointer;
+}
+
+#badfor #my{
+  height: 30px;
+  width: 30px;
+  text-align: center;
+  padding-top: 5px;
+  font-size: 15px;
+  font-weight: 100;
+  color: #ffffff;
+  border: 1px solid white;
+  transition: all ease 0.2s;
+}
+
+#my:hover{
+    scale: 1.1;
+    color: #ffffff;
+    transform: translateY(-5%);
+}
+
+
+#badfor #health{
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    padding-top: 5px;
+    font-size: 15px;
+    font-weight: 100;
+    color: #ffffff;
+    border: 1px solid white;
+    transition: all ease 0.2s;
+}
+
+#health:hover{
+    scale: 1.1;
+    color: #ffffff;
+    transform: translateY(-5%);
+}
+
+
+#badfor #youmake{
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    padding-top: 5px;
+    font-size: 15px;
+    font-weight:100;
+    color: #ffffff;
+    border: 1px solid white;
+    transition: all ease 0.2s;
+}
+
+#youmake:hover{
+    scale: 1.1;
+    color: #ffffff;
+    transform: translateY(-20%);
+}
+
+
+#badfor #mehate{
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    padding-top: 5px;
+    font-size: 15px;
+    font-weight: 100;
+    color: #ffffff;
+    border: 1px solid white;
+    transition: all ease 0.2s;
+}
+
+
+#mehate:hover{
+    scale: 1.1;
+    color: #ffffff;
+    transform: translateY(-20%);
+}
+
+
+#badfor #myself{
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    padding-top: 5px;
+    font-size: 15px;
+    font-weight: 100;
+    color: #ffffff;
+    border: 1px solid white;
+    transition: all ease 0.2s;
+}
+
+#myself:hover{
+    scale: 1.1;
+    color: #ffffff;
+    transform: translateY(-20%);
+}
